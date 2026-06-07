@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Магистратураға дайындық тесті</title>
+
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -19,26 +20,26 @@ body{
   background:linear-gradient(135deg,#111827,#1e3a8a,#7c2d12,#ca8a04);
   color:white;
   text-align:center;
-  padding:54px 18px 42px;
+  padding:52px 18px 38px;
 }
 .hero h1{
   margin:0;
-  font-size:40px;
+  font-size:38px;
 }
 .subtitle{
-  margin:12px auto 0;
-  max-width:920px;
+  margin:10px auto 0;
+  max-width:900px;
   font-size:18px;
   opacity:.95;
 }
 .copybox{
-  max-width:850px;
-  margin:20px auto 0;
+  max-width:820px;
+  margin:18px auto 0;
   background:#fef3c7;
   color:#78350f;
   border:2px solid #facc15;
   border-radius:18px;
-  padding:15px 18px;
+  padding:14px 18px;
   font-weight:800;
 }
 .copybox span{
@@ -47,9 +48,8 @@ body{
   margin-top:5px;
   font-weight:500;
 }
-
 .promo-top{
-  max-width:850px;
+  max-width:820px;
   margin:18px auto 0;
   background:rgba(255,255,255,.14);
   border:1px solid rgba(255,255,255,.30);
@@ -76,47 +76,6 @@ body{
 .channel-btn:hover{
   background:white;
   color:#2563eb;
-}
-.promo-top h3{
-  margin:0 0 6px;
-  font-size:20px;
-}
-.promo-top p{
-  margin:0 0 12px;
-  opacity:.95;
-}
-.channel-btn{
-  display:inline-block;
-  color:white;
-  text-decoration:none;
-  background:#2563eb;
-  padding:10px 16px;
-  border-radius:999px;
-  font-weight:900;
-}
-.channel-btn:hover{
-  background:white;
-  color:#2563eb;
-}
-.links{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:18px;
-}
-.links a{
-  color:white;
-  text-decoration:none;
-  background:rgba(255,255,255,.16);
-  border:1px solid rgba(255,255,255,.35);
-  padding:9px 14px;
-  border-radius:999px;
-  font-weight:800;
-}
-.links a:hover{
-  background:white;
-  color:#1e3a8a;
 }
 .nav{
   position:sticky;
@@ -156,7 +115,7 @@ body{
   border-radius:26px;
   padding:26px;
   margin-bottom:32px;
-  box-shadow:0 18px 44px rgba(15,23,42,.11);
+  box-shadow:0 18px 44px rgba(15,23,42,.10);
   scroll-margin-top:90px;
 }
 .head{
@@ -190,20 +149,6 @@ h2{
   font-weight:800;
   font-size:13px;
 }
-.audio-box{
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-  border-radius:16px;
-  padding:14px;
-  margin:14px 0 20px;
-}
-.audio-box b{
-  display:block;
-  margin-bottom:8px;
-}
-audio{
-  width:100%;
-}
 .reading-text{
   background:#fff7ed;
   border-left:6px solid #f97316;
@@ -216,6 +161,18 @@ audio{
   margin:0 0 10px;
   color:#9a3412;
 }
+.audio-box{
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  padding:14px;
+  margin:14px 0 20px;
+}
+.audio-box b{
+  display:block;
+  margin-bottom:8px;
+}
+audio{width:100%}
 .q{
   border:1px solid #e5e7eb;
   border-radius:18px;
@@ -245,9 +202,7 @@ audio{
   background:#eff6ff;
   border-color:#93c5fd;
 }
-.opt input{
-  margin-right:8px;
-}
+.opt input{margin-right:8px}
 .q-img{
   display:block;
   width:100%;
@@ -260,12 +215,42 @@ audio{
   box-shadow:0 10px 24px rgba(15,23,42,.10);
   background:white;
 }
+.block-result{
+  margin-top:24px;
+}
+.block-result-title{
+  background:#ecfdf5;
+  border:1px solid #86efac;
+  border-left:6px solid #22c55e;
+  border-radius:16px;
+  padding:14px 16px;
+  margin:18px 0;
+}
+.block-result-title h3{
+  margin:0;
+  color:#15803d;
+  font-size:21px;
+}
+.ans{
+  border-radius:16px;
+  padding:15px;
+  margin:12px 0;
+  border:1px solid #e5e7eb;
+}
+.ok{background:#ecfdf5;border-color:#86efac}
+.bad{background:#fff1f2;border-color:#fecdd3}
+.oktxt{color:#15803d;font-weight:800}
+.badtxt{color:#be123c;font-weight:800}
+.ex{
+  margin-top:8px;
+  font-size:15px;
+}
 .final-card{
   text-align:center;
   background:linear-gradient(135deg,#eff6ff,#fff7ed);
   border:1px solid #bfdbfe;
   border-radius:26px;
-  padding:26px;
+  padding:24px;
   margin:32px 0;
 }
 .btn{
@@ -279,93 +264,73 @@ audio{
   cursor:pointer;
   box-shadow:0 10px 24px rgba(37,99,235,.25);
 }
-.btn:hover{
-  transform:translateY(-1px);
-}
+.btn:hover{transform:translateY(-1px)}
 .result{
-  margin-top:24px;
+  margin-top:22px;
   text-align:left;
 }
-.summary{
-  background:#ecfdf5;
-  border:1px solid #86efac;
-  border-left:6px solid #22c55e;
+.summary-small{
+  background:#f8fafc;
+  border:1px solid #dbeafe;
   border-radius:18px;
-  padding:18px;
-  margin-bottom:16px;
+  padding:16px;
+  font-size:14px;
 }
-.summary h3{
-  margin:0 0 10px;
-  color:#15803d;
-  font-size:24px;
+.summary-small h3{
+  margin:0 0 8px;
+  color:#1d4ed8;
+  font-size:18px;
 }
 .score-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-  gap:10px;
-  margin-top:12px;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:8px;
+  margin-top:10px;
 }
 .score-item{
   background:white;
-  border:1px solid #bbf7d0;
-  border-radius:14px;
-  padding:12px;
-  font-weight:800;
-}
-.ans{
-  border-radius:16px;
-  padding:15px;
-  margin:12px 0;
-  border:1px solid #e5e7eb;
-}
-.ok{
-  background:#ecfdf5;
-  border-color:#86efac;
-}
-.bad{
-  background:#fff1f2;
-  border-color:#fecdd3;
-}
-.oktxt{
-  color:#15803d;
-  font-weight:800;
-}
-.badtxt{
-  color:#be123c;
-  font-weight:800;
-}
-.ex{
-  margin-top:8px;
-  font-size:15px;
+  border:1px solid #dbeafe;
+  border-radius:12px;
+  padding:9px;
+  font-weight:700;
+  font-size:13px;
 }
 .promo{
   background:#111827;
   color:white;
-  border-radius:22px;
-  padding:22px;
-  margin-top:22px;
+  border-radius:18px;
+  padding:18px;
+  margin-top:18px;
   text-align:center;
+  font-size:14px;
 }
 .promo h3{
-  margin:0 0 10px;
+  margin:0 0 8px;
+  font-size:18px;
+}
+.promo p{
+  margin:8px 0;
+  opacity:.9;
 }
 .promo-links{
   display:flex;
   justify-content:center;
-  gap:10px;
+  gap:8px;
   flex-wrap:wrap;
-  margin-top:14px;
+  margin-top:12px;
 }
 .promo-links a{
   color:white;
   text-decoration:none;
   background:#2563eb;
-  padding:10px 14px;
+  padding:8px 12px;
   border-radius:999px;
-  font-weight:900;
+  font-weight:800;
+  font-size:13px;
 }
 .promo-links a:nth-child(2){background:#7c3aed}
-.promo-links a:nth-child(3){background:#16a34a}
+.promo-links a:nth-child(3){background:#0f766e}
+.promo-links a:nth-child(4){background:#16a34a}
 .footer{
   text-align:center;
   color:#64748b;
@@ -384,21 +349,19 @@ audio{
 <body>
 <section class="hero">
   <h1>Магистратураға дайындық тесті</h1>
-  <div class="subtitle">
-    Сыни ойлау · Аналитикалық ойлау · Ағылшын тілі
-  </div>
+  <div class="subtitle">Сыни ойлау · Аналитикалық ойлау · Ағылшын тілі</div>
 
   <div class="copybox">
     <b>© @elnazm_ln</b><br>
     Сайтты сатуға БОЛМАЙДЫ!
-    <span> НЕ Продавать! БЕСПЛАТНЫЙ САЙТ .</span>
+    <span>НЕ продавать! Бесплатный сайт.</span>
   </div>
 
-<div class="promo-top">
-  <h3>Қосымша тесттер Telegram каналда бар</h3>
-  <p>Магистратураға дайындыққа арналған басқа да тесттер мен материалдарды Telegram каналдан көре аласыз.</p>
-  <a class="channel-btn" href="https://t.me/+8SolEPgN4Is0MTMy" target="_blank">Telegram каналға өту</a>
-</div>
+  <div class="promo-top">
+    <h3>Қосымша тесттер Telegram каналда бар</h3>
+    <p>Магистратураға дайындыққа арналған басқа да тесттер мен материалдарды Telegram каналдан көре аласыз.</p>
+    <a class="channel-btn" href="https://t.me/+8SolEPgN4Is0MTMy" target="_blank">Telegram каналға өту</a>
+  </div>
 </section>
 
 <nav class="nav">
@@ -409,7 +372,6 @@ audio{
 </nav>
 
 <main class="wrap">
-<form id="quizForm">
 
 <section class="card" id="critical">
   <div class="head">
@@ -419,142 +381,8 @@ audio{
     </div>
     <span class="badge">15 сұрақ</span>
   </div>
-
-  <div class="q" data-block="critical" data-answer="D" data-explain="A шамасы 3/4 = 0,75. B шамасы 2/13 ≈ 0,15. 0,75 саны 0,15-тен үлкен, сондықтан A шамасы B шамасынан үлкен. Дұрыс жауап: D.">
-    <div class="qtitle">1. Бағанды салыстырыңыз: A шамасы = 3/4, B шамасы = 2/13</div>
-    <label class="opt"><input type="radio" name="q1" value="A"> A) B &gt; A</label>
-    <label class="opt"><input type="radio" name="q1" value="B"> B) B = 3A</label>
-    <label class="opt"><input type="radio" name="q1" value="C"> C) B = A</label>
-    <label class="opt"><input type="radio" name="q1" value="D"> D) B &lt; A</label>
-    <label class="opt"><input type="radio" name="q1" value="E"> E) B &gt; 3A</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="B" data-explain="150 000 теңгенің 15%-ы: 150000 × 0,15 = 22500. Жеңілдік бағасы: 150000 − 22500 = 127500 теңге. Дұрыс жауап: B.">
-    <div class="qtitle">2. Теледидардың негізгі сатылым бағасы 150 000 теңге. Жеңілдік кезінде 15%-ға арзандатылған теледидардың бағасын табыңыз.</div>
-    <label class="opt"><input type="radio" name="q2" value="A"> A) 125 000 тг</label>
-    <label class="opt"><input type="radio" name="q2" value="B"> B) 127 500 тг</label>
-    <label class="opt"><input type="radio" name="q2" value="C"> C) 110 000 тг</label>
-    <label class="opt"><input type="radio" name="q2" value="D"> D) 115 000 тг</label>
-    <label class="opt"><input type="radio" name="q2" value="E"> E) 113 000 тг</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="C" data-explain="Теңдеуді ашамыз: 6 − 4(z−2)+2 = 4 − 2(z−4). Сол жақ: 6−4z+8+2 = 16−4z. Оң жақ: 4−2z+8 = 12−2z. 16−4z = 12−2z, сонда 4 = 2z, z = 2. Дұрыс жауап: C.">
-    <div class="qtitle">3. 6 − 4(z − 2) + 2 = 4 − 2(z − 4), теңдеудегі z-тің мәні.</div>
-    <label class="opt"><input type="radio" name="q3" value="A"> A) 0</label>
-    <label class="opt"><input type="radio" name="q3" value="B"> B) −3</label>
-    <label class="opt"><input type="radio" name="q3" value="C"> C) 2</label>
-    <label class="opt"><input type="radio" name="q3" value="D"> D) −2</label>
-    <label class="opt"><input type="radio" name="q3" value="E"> E) 3</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="B" data-explain="Теңдеу: (y−3)/6 = 7/3. Айқастырып көбейтеміз: 3(y−3)=42. 3y−9=42, 3y=51, y=17. Дұрыс жауап: B.">
-    <div class="qtitle">4. (y − 3) / 6 = 7 / 3 теңдеуіндегі y мәні.</div>
-    <label class="opt"><input type="radio" name="q4" value="A"> A) 16</label>
-    <label class="opt"><input type="radio" name="q4" value="B"> B) 17</label>
-    <label class="opt"><input type="radio" name="q4" value="C"> C) 18</label>
-    <label class="opt"><input type="radio" name="q4" value="D"> D) 19</label>
-    <label class="opt"><input type="radio" name="q4" value="E"> E) 20</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="B" data-explain="2(3x+1)−x ≤ 3(x+4). Ашамыз: 6x+2−x ≤ 3x+12. 5x+2 ≤ 3x+12. 2x ≤ 10, x ≤ 5. Дұрыс жауап: B.">
-    <div class="qtitle">5. 2(3x + 1) − x ≤ 3(x + 4), теңсіздікті шешіңіз.</div>
-    <label class="opt"><input type="radio" name="q5" value="A"> A) x ≤ 4</label>
-    <label class="opt"><input type="radio" name="q5" value="B"> B) x ≤ 5</label>
-    <label class="opt"><input type="radio" name="q5" value="C"> C) x ≤ −5</label>
-    <label class="opt"><input type="radio" name="q5" value="D"> D) x &gt; 5</label>
-    <label class="opt"><input type="radio" name="q5" value="E"> E) x &gt; −5</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="A" data-explain="Берілген бөлшекті теңдеу шешілгенде x = −1 шығады. Тексеру арқылы да көруге болады: x = −1 қойғанда теңдік орындалады. Дұрыс жауап: A.">
-    <div class="qtitle">6. Берілген бөлшекті теңдеудің шешімі.</div>
-    <label class="opt"><input type="radio" name="q6" value="A"> A) −1</label>
-    <label class="opt"><input type="radio" name="q6" value="B"> B) 2</label>
-    <label class="opt"><input type="radio" name="q6" value="C"> C) 1</label>
-    <label class="opt"><input type="radio" name="q6" value="D"> D) 4</label>
-    <label class="opt"><input type="radio" name="q6" value="E"> E) 3</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="A" data-explain="Диаграмма бойынша Аружан 60 ұпай, Бибарыс 40 ұпай жинаған. 60 − 40 = 20. Демек, Бибарыс Аружаннан 20 ұпай кем жинаған. Дұрыс жауап: A.">
-    <div class="qtitle">7. Диаграмманы пайдаланып, Бибарыс Аружаннан қанша ұпай кем жинағанын анықтаңыз.</div>
-    <img class="q-img" src="IMG_0909.jpeg" alt="7-сұрақ диаграммасы">
-    <label class="opt"><input type="radio" name="q7" value="A"> A) 20</label>
-    <label class="opt"><input type="radio" name="q7" value="B"> B) 30</label>
-    <label class="opt"><input type="radio" name="q7" value="C"> C) 15</label>
-    <label class="opt"><input type="radio" name="q7" value="D"> D) 18</label>
-    <label class="opt"><input type="radio" name="q7" value="E"> E) 10</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="B" data-explain="Радиус диаметрдің жартысына тең. Диаметр 30 см болса, радиус 30/2 = 15 см. Дұрыс жауап: B.">
-    <div class="qtitle">8. Диаметрі 30 см болатын шеңбердің радиусын табыңыз.</div>
-    <label class="opt"><input type="radio" name="q8" value="A"> A) 10 см</label>
-    <label class="opt"><input type="radio" name="q8" value="B"> B) 15 см</label>
-    <label class="opt"><input type="radio" name="q8" value="C"> C) 20 см</label>
-    <label class="opt"><input type="radio" name="q8" value="D"> D) 25 см</label>
-    <label class="opt"><input type="radio" name="q8" value="E"> E) 30 см</label>
-  </div>
-  <div class="q" data-block="critical" data-answer="A" data-explain="O нүктесі координат басы деп алынады: O(0;0). A нүктесі (8;6). Кесіндінің ортасын табу формуласы: ((x1+x2)/2; (y1+y2)/2). Сондықтан B = ((0+8)/2; (0+6)/2) = (4;3). Дұрыс жауап: A.">
-    <div class="qtitle">9. Жазықтықта A нүктесінің координатасы (8;6), [OA] кесіндісінің ортасы B нүктесінің координатасын табыңыз.</div>
-    <label class="opt"><input type="radio" name="q9" value="A"> A) (4;3)</label>
-    <label class="opt"><input type="radio" name="q9" value="B"> B) (3;4)</label>
-    <label class="opt"><input type="radio" name="q9" value="C"> C) (2;−4)</label>
-    <label class="opt"><input type="radio" name="q9" value="D"> D) (5;6)</label>
-    <label class="opt"><input type="radio" name="q9" value="E"> E) (8;−6)</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="D" data-explain="x=2, y=3. A шамасы: (2x+y)² = (2·2+3)² = 7² = 49. B шамасы: (x+2y)² = (2+2·3)² = 8² = 64. 64 > 49, сондықтан B шамасы үлкен. Дұрыс жауап: D.">
-    <div class="qtitle">10. Бағанды салыстырыңыз: x = 2, y = 3. A шамасы: (2x + y)², B шамасы: (x + 2y)².</div>
-    <label class="opt"><input type="radio" name="q10" value="A"> A) Берілген мәлімет жеткіліксіз</label>
-    <label class="opt"><input type="radio" name="q10" value="B"> B) A шамасы үлкен</label>
-    <label class="opt"><input type="radio" name="q10" value="C"> C) Шамалар тең</label>
-    <label class="opt"><input type="radio" name="q10" value="D"> D) B шамасы үлкен</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="C" data-explain="Үшбұрыштың ауданы формуласы: S = 1/2 · a · h. Мұнда табаны 24 см, биіктігі 11 см. S = 1/2 · 24 · 11 = 12 · 11 = 132 см². Дұрыс жауап: C.">
-    <div class="qtitle">11. Үшбұрыштың табаны 24 см, оған түсірілген биіктік 11 см. Үшбұрыштың ауданын табыңыз.</div>
-    <label class="opt"><input type="radio" name="q11" value="A"> A) 264 см²</label>
-    <label class="opt"><input type="radio" name="q11" value="B"> B) 528 см²</label>
-    <label class="opt"><input type="radio" name="q11" value="C"> C) 132 см²</label>
-    <label class="opt"><input type="radio" name="q11" value="D"> D) 176 см²</label>
-    <label class="opt"><input type="radio" name="q11" value="E"> E) 576 см²</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="A" data-explain="a=1 деп алсақ, 8a ≤ y ≤ 9a аралығында y 8-ден 9-ға дейін, ал 5a ≤ x ≤ 6a аралығында x 5-тен 6-ға дейін мән қабылдайды. Берілген шарт бойынша x және y қабылдайтын мәндер санының бөліндісі 1-ге тең. Дұрыс жауап: A.">
-    <div class="qtitle">12. 8a ≤ y ≤ 9a және 5a ≤ x ≤ 6a теңсіздіктерін қанағаттандыратын x және y қабылдайтын мәндері сандарының бөліндісінің шамасы.</div>
-    <label class="opt"><input type="radio" name="q12" value="A"> A) 1</label>
-    <label class="opt"><input type="radio" name="q12" value="B"> B) 2</label>
-    <label class="opt"><input type="radio" name="q12" value="C"> C) 3</label>
-    <label class="opt"><input type="radio" name="q12" value="D"> D) 4</label>
-    <label class="opt"><input type="radio" name="q12" value="E"> E) 5</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="A" data-explain="Сурет бойынша F фигурасының мәні 7, D фигурасының мәні 3. F − D = 7 − 3 = 4. E фигурасының мәні 3. Қосынды: 4 + 3 = 7. 7 саны 6 ≤ x ≤ 8 аралығына кіреді. Дұрыс жауап: A.">
-    <div class="qtitle">13. Суреттегі F фигура ауданына D фигура ауданынан артық шамасына E ауданының қосындысы x тиісті болатын аралық.</div>
-    <img class="q-img" src="IMG_0910.jpeg" alt="13-сұрақ диаграммасы">
-    <label class="opt"><input type="radio" name="q13" value="A"> A) 6 ≤ x ≤ 8</label>
-    <label class="opt"><input type="radio" name="q13" value="B"> B) 1 ≤ x ≤ 4</label>
-    <label class="opt"><input type="radio" name="q13" value="C"> C) 1 ≤ x ≤ 3</label>
-    <label class="opt"><input type="radio" name="q13" value="D"> D) 2 ≤ x ≤ 6</label>
-    <label class="opt"><input type="radio" name="q13" value="E"> E) 3 ≤ x ≤ 6</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="A" data-explain="Өрнек: x = (5a5 + 304 − 3a4)/5. Сан түрінде қарастырғанда 5a5 − 3a4 айырмасы 201-ге тең болады, оған 304 қосылады: 201 + 304 = 505. 505/5 = 101. Дұрыс жауап: A.">
-    <div class="qtitle">14. x = (5a5 + 304 − 3a4) / 5, теңдеудегі x-тің мәні.</div>
-    <label class="opt"><input type="radio" name="q14" value="A"> A) 101</label>
-    <label class="opt"><input type="radio" name="q14" value="B"> B) 1a2</label>
-    <label class="opt"><input type="radio" name="q14" value="C"> C) 1a1</label>
-    <label class="opt"><input type="radio" name="q14" value="D"> D) 100</label>
-    <label class="opt"><input type="radio" name="q14" value="E"> E) 1a0</label>
-  </div>
-
-  <div class="q" data-block="critical" data-answer="B" data-explain="Кесте бойынша A=1200, B=800, C=1400, D=3200. A+B+C = 1200+800+1400 = 3400. 3400 > 3200, сондықтан A+B+C > D. Дұрыс жауап: B.">
-    <div class="qtitle">15. Дүкендегі ойыншықтардың бағасы бойынша өрнекті салыстырыңыз.</div>
-    <img class="q-img" src="IMG_0911.jpeg" alt="15-сұрақ кестесі">
-    <label class="opt"><input type="radio" name="q15" value="A"> A) A + C &gt; D</label>
-    <label class="opt"><input type="radio" name="q15" value="B"> B) A + B + C &gt; D</label>
-    <label class="opt"><input type="radio" name="q15" value="C"> C) A + C + B = D</label>
-    <label class="opt"><input type="radio" name="q15" value="D"> D) 3A + C &lt; B + D</label>
-    <label class="opt"><input type="radio" name="q15" value="E"> E) A + C − B = D</label>
-  </div>
+  <div id="criticalQuestions"></div>
+  <div class="block-result" id="criticalResult"></div>
 </section>
 
 <section class="card" id="analytical">
@@ -565,160 +393,8 @@ audio{
     </div>
     <span class="badge">15 сұрақ</span>
   </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="Қазақ халқы үш жүзге бөлінеді: Ұлы жүз, Орта жүз, Кіші жүз. Сондықтан бос орынға «Кіші» сөзі қойылады. Дұрыс жауап: C.">
-    <div class="qtitle">16. Қазақ мемлекеті үш жүзге бөлінген: Ұлы жүз, Орта жүз, [...] жүз.</div>
-    <label class="opt"><input type="radio" name="q16" value="A"> A) Биік</label>
-    <label class="opt"><input type="radio" name="q16" value="B"> B) Орта</label>
-    <label class="opt"><input type="radio" name="q16" value="C"> C) Кіші</label>
-    <label class="opt"><input type="radio" name="q16" value="D"> D) Мықты</label>
-    <label class="opt"><input type="radio" name="q16" value="E"> E) Кенже</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="A" data-explain="Дұрыс мақал: «Жігітке жеті өнер де аз». Сондықтан бос орынға «жеті» сөзі қойылады. Дұрыс жауап: A.">
-    <div class="qtitle">17. Берілген мақал-мәтелді аяқтаңыз: Жігітке [...] өнер де аз болады.</div>
-    <label class="opt"><input type="radio" name="q17" value="A"> A) жеті</label>
-    <label class="opt"><input type="radio" name="q17" value="B"> B) бес</label>
-    <label class="opt"><input type="radio" name="q17" value="C"> C) бір</label>
-    <label class="opt"><input type="radio" name="q17" value="D"> D) төрт</label>
-    <label class="opt"><input type="radio" name="q17" value="E"> E) жүз</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="B" data-explain="Жамбыл Жабаев 1846–1945 жылдары өмір сүрген, яғни жүз жасқа жуық өмір сүрген ақын ретінде белгілі. Берілген нұсқалар ішінде мәтіндегі ойға сәйкес жауап — «жүз». Дұрыс жауап: B.">
-    <div class="qtitle">18. Мәтіндегі бос орынды толтырыңыз: Жамбыл Жабаев — қазақ халқының ұлы ақыны. Ол [...] жасаған адам.</div>
-    <label class="opt"><input type="radio" name="q18" value="A"> A) жүз он</label>
-    <label class="opt"><input type="radio" name="q18" value="B"> B) жүз</label>
-    <label class="opt"><input type="radio" name="q18" value="C"> C) тоқсан</label>
-    <label class="opt"><input type="radio" name="q18" value="D"> D) тоқсан бес</label>
-    <label class="opt"><input type="radio" name="q18" value="E"> E) жүз бес</label>
-  </div>
-
-  <div class="reading-text">
-    <h3>Сегізаяқ туралы мәтін</h3>
-    <p>Сегізаяқ – ең ақылды және толығымен зерттеле қоймаған моллюска түрі. Оның денесіндегі уға толы қалташасы жақсы қорғану мен аң аулауға мүмкіндік береді. Бірақ егер сегізаяққа қандай да бір қауіп төнетін болса, ол улы сиясын шашып жібереді. Әйткенмен, ол оның жалғыз ғана қорғанышы емес, сонымен қатар жаудың иіс сезу мүшесін нашарлататын сұйық зат бөледі. Оның есте сақтау қабілеті өте қысқа және қиын жағдайға тап болғанда өңін өзгерте алады.</p>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="A" data-explain="Мәтінде «ол улы сиясын шашып жібереді» деп нақты айтылған. Сондықтан бос орынға «сиясын» сөзі сәйкес келеді. Дұрыс жауап: A.">
-    <div class="qtitle">19. Бос орынды толтырыңыз: Егер сегізаяққа қауіп төнсе, ол улы [...] шашып жібереді.</div>
-    <label class="opt"><input type="radio" name="q19" value="A"> A) сиясын</label>
-    <label class="opt"><input type="radio" name="q19" value="B"> B) уын</label>
-    <label class="opt"><input type="radio" name="q19" value="C"> C) қанын</label>
-    <label class="opt"><input type="radio" name="q19" value="D"> D) суын</label>
-    <label class="opt"><input type="radio" name="q19" value="E"> E) сөлін</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="E" data-explain="«Өңін» сөзі сыртқы түр, рең, келбет, бет-әлпет мағыналарына жақын. Берілген нұсқалардың бәрі мағына жағынан сәйкес келеді. Дұрыс жауап: E.">
-    <div class="qtitle">20. Мәтіндегі «өңін» сөзінің мағынасына жақын сөзді табыңыз.</div>
-    <label class="opt"><input type="radio" name="q20" value="A"> A) түрін</label>
-    <label class="opt"><input type="radio" name="q20" value="B"> B) келбетін</label>
-    <label class="opt"><input type="radio" name="q20" value="C"> C) реңін</label>
-    <label class="opt"><input type="radio" name="q20" value="D"> D) бет әлпетін</label>
-    <label class="opt"><input type="radio" name="q20" value="E"> E) көрсетілген барлық жауап дұрыс</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="Мәтінде уға толы қалташа «жақсы қорғану мен аң аулауға мүмкіндік береді» делінген. Сондықтан екі қызмет те дұрыс: қорғану және аң аулау. Дұрыс жауап: C.">
-    <div class="qtitle">21. Оның денесіндегі уға толы қалташасының қызметі қандай?</div>
-    <label class="opt"><input type="radio" name="q21" value="A"> A) жақсы қорғану</label>
-    <label class="opt"><input type="radio" name="q21" value="B"> B) тез жүзу</label>
-    <label class="opt"><input type="radio" name="q21" value="C"> C) жақсы қорғану және аң аулау</label>
-    <label class="opt"><input type="radio" name="q21" value="D"> D) тез жүзу және аң аулау</label>
-    <label class="opt"><input type="radio" name="q21" value="E"> E) аң аулау</label>
-  </div>
-
-  <div class="reading-text">
-    <h3>Бөгенбай батыр туралы мәтін</h3>
-    <p>Бөгенбай – Абылай хан тұсындағы батыр, атақты қолбасшы. Қазақ жауынгерлері арасында зор беделге ие болған, сондықтан оны халық «Қанжығалы Бөгенбай» деп атап кеткен. Сырдария өзенінің жағасында дүниеге келіпті. Бала кезінен қазақ даласының шешендік өнерін бойына сіңіріп өскен Бөгенбай жігіт шағында ру арасындағы дауларды шешіп, билердің құрылтайларына қатысқан. Өзіне жақын адамдардан топ құрып, ол кейін елде «Қанжығалының қырық батыры» деп аталып кеткен.</p>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="E" data-explain="Мәтінде «Өзіне жақын адамдардан топ құрып, ол кейін елде “Қанжығалының қырық батыры” деп аталып кеткен» делінген. Демек, бұл Бөгенбай құрған топ. Дұрыс жауап: E.">
-    <div class="qtitle">22. «Қанжығалының қырық батыры» деп не аталды?</div>
-    <label class="opt"><input type="radio" name="q22" value="A"> A) Батырдың әкесі құрған топ</label>
-    <label class="opt"><input type="radio" name="q22" value="B"> B) Сарай күзетшілері</label>
-    <label class="opt"><input type="radio" name="q22" value="C"> C) Хан әскері</label>
-    <label class="opt"><input type="radio" name="q22" value="D"> D) Батыр бастаған қол</label>
-    <label class="opt"><input type="radio" name="q22" value="E"> E) Бөгенбай құрған топ</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="D" data-explain="Мәтінде Бөгенбай батырдың Сырдария өзенінің жағасында дүниеге келгені айтылған. Дұрыс жауап: D.">
-    <div class="qtitle">23. Бөгенбай батыр қай өзеннің жағасында дүниеге келген?</div>
-    <label class="opt"><input type="radio" name="q23" value="A"> A) Еділ</label>
-    <label class="opt"><input type="radio" name="q23" value="B"> B) Ертіс</label>
-    <label class="opt"><input type="radio" name="q23" value="C"> C) Шу</label>
-    <label class="opt"><input type="radio" name="q23" value="D"> D) Сырдария</label>
-    <label class="opt"><input type="radio" name="q23" value="E"> E) Есіл</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="«Атақты» сөзінің мағынасына ең жақын сөз — «әйгілі». Екеуі де көпшілікке танымал деген мағына береді. Дұрыс жауап: C.">
-    <div class="qtitle">24. Мәтіндегі «атақты» сөзінің мағынасына жақын сөзді табыңыз.</div>
-    <label class="opt"><input type="radio" name="q24" value="A"> A) айқын</label>
-    <label class="opt"><input type="radio" name="q24" value="B"> B) ерекше</label>
-    <label class="opt"><input type="radio" name="q24" value="C"> C) әйгілі</label>
-    <label class="opt"><input type="radio" name="q24" value="D"> D) асқан</label>
-    <label class="opt"><input type="radio" name="q24" value="E"> E) дара</label>
-  </div>
-    <div class="reading-text">
-    <h3>Жеті жарғы туралы мәтін</h3>
-    <p>Жеті жарғы – Тәуке хан тұсында қабылданған қазақ халқының дәстүрлі әдеп-ғұрып заңдарының жинағы. Тәуке хан бұрыннан қалыптасқан дәстүрлі заңдарды жетілдіріп, жаңа заң жүйесін жасауға тырысты. Үш жүздің игі жақсылары мен билерін жинап, Күлтөбенің басында «Тәуке ханның Жеті жарғысы» деген атауға ие болған заңдар жиынтығын қабылдады.</p>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="Мәтінде «Күлтөбенің басында ... заңдар жиынтығын қабылдады» деп нақты айтылған. Сондықтан дұрыс жауап — Күлтөбе.">
-    <div class="qtitle">25. Тәуке ханның «Жеті жарғысы» қабылданған жер:</div>
-    <label class="opt"><input type="radio" name="q25" value="A"> A) Отырар</label>
-    <label class="opt"><input type="radio" name="q25" value="B"> B) Ұлытау</label>
-    <label class="opt"><input type="radio" name="q25" value="C"> C) Күлтөбе</label>
-    <label class="opt"><input type="radio" name="q25" value="D"> D) Төрткөл</label>
-    <label class="opt"><input type="radio" name="q25" value="E"> E) Шортөбе</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="D" data-explain="«Жарғы» сөзі бұл контексте әділдік, билік жүргізу, құқықтық тәртіп мағынасында қолданылады. Берілген жауап кілті бойынша дұрыс жауап — D.">
-    <div class="qtitle">26. «Жарғы» сөзінің мағынасы:</div>
-    <label class="opt"><input type="radio" name="q26" value="A"> A) Жүйе</label>
-    <label class="opt"><input type="radio" name="q26" value="B"> B) Жаза</label>
-    <label class="opt"><input type="radio" name="q26" value="C"> C) Билік</label>
-    <label class="opt"><input type="radio" name="q26" value="D"> D) Әділдік</label>
-    <label class="opt"><input type="radio" name="q26" value="E"> E) Заң</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="«Ескі» сөзінің антонимі — «жаңа». Антоним дегеніміз мағынасы қарама-қарсы сөз. Дұрыс жауап: C.">
-    <div class="qtitle">27. Мәтіндегі «ескі» сөзінің антонимін табыңыз.</div>
-    <label class="opt"><input type="radio" name="q27" value="A"> A) әділ</label>
-    <label class="opt"><input type="radio" name="q27" value="B"> B) көне</label>
-    <label class="opt"><input type="radio" name="q27" value="C"> C) жаңа</label>
-    <label class="opt"><input type="radio" name="q27" value="D"> D) ерте</label>
-    <label class="opt"><input type="radio" name="q27" value="E"> E) ашық</label>
-  </div>
-
-  <div class="reading-text">
-    <h3>Балықтар туралы мәтін</h3>
-    <p>Балықтар – негізінен судағы тіршілікке бейімделген жануарлар. Балықтар өкпе арқылы емес, желбезек арқылы тыныс алады. Олар тұзды суларда да, тұщы суларда да тіршілік ете алады. Балықтар үш топқа бөлінеді: жақсыз, шеміршекті және сүйекті балықтар. Балық – адам үшін қажетті белокқа бай тағам көзі.</p>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="Мәтінде балықтар өкпе арқылы емес, желбезек арқылы тыныс алады деп айтылған. Сондықтан дұрыс жауап — желбезек.">
-    <div class="qtitle">28. Балықтардың тыныс алу мүшесі:</div>
-    <label class="opt"><input type="radio" name="q28" value="A"> A) кеңірдек</label>
-    <label class="opt"><input type="radio" name="q28" value="B"> B) өкпе</label>
-    <label class="opt"><input type="radio" name="q28" value="C"> C) желбезек</label>
-    <label class="opt"><input type="radio" name="q28" value="D"> D) көкірек</label>
-    <label class="opt"><input type="radio" name="q28" value="E"> E) қанат</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="Мәтінде балықтар үш топқа бөлінеді деп берілген: жақсыз, шеміршекті және сүйекті балықтар. Сондықтан дұрыс жауап — C.">
-    <div class="qtitle">29. Балықтар үш топқа бөлінеді:</div>
-    <label class="opt"><input type="radio" name="q29" value="A"> A) жақсыз, шеміршексіз, сүйекті</label>
-    <label class="opt"><input type="radio" name="q29" value="B"> B) жақсыз, шеміршекті, қанатты</label>
-    <label class="opt"><input type="radio" name="q29" value="C"> C) жақсыз, шеміршекті, сүйекті</label>
-    <label class="opt"><input type="radio" name="q29" value="D"> D) жақты, шеміршекті, қанатты</label>
-    <label class="opt"><input type="radio" name="q29" value="E"> E) жақсыз, шеміршексіз, қанатты</label>
-  </div>
-
-  <div class="q" data-block="analytical" data-answer="C" data-explain="Мәтінде «Балық – адам үшін қажетті белокқа бай тағам көзі» деп берілген. Сондықтан бос орынға «белокқа» сөзі қойылады.">
-    <div class="qtitle">30. Бос орынды толтырыңыз: Балық – адам үшін қажетті ___ бай тағам көзі.</div>
-    <label class="opt"><input type="radio" name="q30" value="A"> A) нәруызге</label>
-    <label class="opt"><input type="radio" name="q30" value="B"> B) майға</label>
-    <label class="opt"><input type="radio" name="q30" value="C"> C) белокқа</label>
-    <label class="opt"><input type="radio" name="q30" value="D"> D) көмірсуларға</label>
-    <label class="opt"><input type="radio" name="q30" value="E"> E) қышқылға</label>
-  </div>
+  <div id="analyticalQuestions"></div>
+  <div class="block-result" id="analyticalResult"></div>
 </section>
 
 <section class="card" id="english">
@@ -738,429 +414,8 @@ audio{
     </audio>
   </div>
 
-  <div class="reading-text">
-    <h3>Listening</h3>
-    <p>1–16 сұрақтарды аудио бойынша орындаңыз.</p>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="B" data-explain="Аудио мәтін бойынша English is the first language in 12 countries. Сондықтан дұрыс жауап — B.">
-    <div class="qtitle">1. English is the first language in ____.</div>
-    <label class="opt"><input type="radio" name="q31" value="A"> A) 10 countries</label>
-    <label class="opt"><input type="radio" name="q31" value="B"> B) 12 countries</label>
-    <label class="opt"><input type="radio" name="q31" value="C"> C) 2 countries</label>
-    <label class="opt"><input type="radio" name="q31" value="D"> D) 15 countries</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="B" data-explain="Аудио бойынша English бірінші тіл болатын елдердегі сөйлеушілер саны 350 million деп берілген. Дұрыс жауап — B.">
-    <div class="qtitle">2. What is the number of English speakers in the countries where English is the first language?</div>
-    <label class="opt"><input type="radio" name="q32" value="A"> A) 25 mln</label>
-    <label class="opt"><input type="radio" name="q32" value="B"> B) 350 mln</label>
-    <label class="opt"><input type="radio" name="q32" value="C"> C) 550 mln</label>
-    <label class="opt"><input type="radio" name="q32" value="D"> D) 100 mln</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="A" data-explain="Аудио мәтін бойынша ағылшын тіліндегі ең жиі қолданылатын сөздер: the, and, to, in, is. Дұрыс жауап — A.">
-    <div class="qtitle">3. According to the text, what are the most frequent words in English?</div>
-    <label class="opt"><input type="radio" name="q33" value="A"> A) The, and, to, in, is</label>
-    <label class="opt"><input type="radio" name="q33" value="B"> B) Sure, between, rather</label>
-    <label class="opt"><input type="radio" name="q33" value="C"> C) Interesting, comfortable</label>
-    <label class="opt"><input type="radio" name="q33" value="D"> D) She, he, it, they</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="D" data-explain="Аудио мәтінде people use English as the second language in 33 countries деп айтылады. Дұрыс жауап — D.">
-    <div class="qtitle">4. People use English as the second language in ____.</div>
-    <label class="opt"><input type="radio" name="q34" value="A"> A) 10 countries</label>
-    <label class="opt"><input type="radio" name="q34" value="B"> B) 15 countries</label>
-    <label class="opt"><input type="radio" name="q34" value="C"> C) 7 countries</label>
-    <label class="opt"><input type="radio" name="q34" value="D"> D) 33 countries</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="D" data-explain="Аудиода ең көп оқылатын шет тілдер ретінде English, French, Spanish көрсетілген. Дұрыс жауап — D.">
-    <div class="qtitle">5. What foreign languages are the most studied?</div>
-    <label class="opt"><input type="radio" name="q35" value="A"> A) Hungarian, Czech, Slovak</label>
-    <label class="opt"><input type="radio" name="q35" value="B"> B) English, Japanese, Polish</label>
-    <label class="opt"><input type="radio" name="q35" value="C"> C) English, Hindi, Greek</label>
-    <label class="opt"><input type="radio" name="q35" value="D"> D) English, French, Spanish</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="A" data-explain="Мәтін бойынша көп адам ағылшын тілін үйренуге қызығады. Сондықтан дұрыс жауап — A.">
-    <div class="qtitle">6. According to the text, which of the following is true about English?</div>
-    <label class="opt"><input type="radio" name="q36" value="A"> A) Many people are interested in learning it</label>
-    <label class="opt"><input type="radio" name="q36" value="B"> B) It is spoken only in Britain</label>
-    <label class="opt"><input type="radio" name="q36" value="C"> C) It is a very easy language to learn</label>
-    <label class="opt"><input type="radio" name="q36" value="D"> D) It is an unknown language</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="B" data-explain="Мәтінде diplomacy, commerce, science, sports сияқты салалар айтылған, бірақ agriculture айтылмаған. Дұрыс жауап — B.">
-    <div class="qtitle">7. What sphere of the English language's usage isn't mentioned in the text?</div>
-    <label class="opt"><input type="radio" name="q37" value="A"> A) diplomacy</label>
-    <label class="opt"><input type="radio" name="q37" value="B"> B) agriculture</label>
-    <label class="opt"><input type="radio" name="q37" value="C"> C) commerce</label>
-    <label class="opt"><input type="radio" name="q37" value="D"> D) science</label>
-    <label class="opt"><input type="radio" name="q37" value="E"> E) sports</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="C" data-explain="Жауап кілті бойынша дұрыс жауап — 350 mln. Сондықтан C нұсқасы дұрыс.">
-    <div class="qtitle">8. According to the text, what is the number of English speakers in the countries where English is the first language?</div>
-    <label class="opt"><input type="radio" name="q38" value="A"> A) 150 mln</label>
-    <label class="opt"><input type="radio" name="q38" value="B"> B) 250 mln</label>
-    <label class="opt"><input type="radio" name="q38" value="C"> C) 350 mln</label>
-    <label class="opt"><input type="radio" name="q38" value="D"> D) 450 mln</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="D" data-explain="Аудио мәтін бойынша tour 3.00-де басталады. Дұрыс жауап — D.">
-    <div class="qtitle">9. When will the tour start?</div>
-    <label class="opt"><input type="radio" name="q39" value="A"> A) At 2.00 on the dot</label>
-    <label class="opt"><input type="radio" name="q39" value="B"> B) At 9.30 on the dot</label>
-    <label class="opt"><input type="radio" name="q39" value="C"> C) At 1.30 on the dot</label>
-    <label class="opt"><input type="radio" name="q39" value="D"> D) At 3.00 on the dot</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="A" data-explain="Мәтін бойынша David Hudson Cambridge Language School-ды басқарады. Дұрыс жауап — A.">
-    <div class="qtitle">10. What language school does David Hudson manage?</div>
-    <label class="opt"><input type="radio" name="q40" value="A"> A) Cambridge Language School</label>
-    <label class="opt"><input type="radio" name="q40" value="B"> B) Grammar School</label>
-    <label class="opt"><input type="radio" name="q40" value="C"> C) Sharon Black School</label>
-    <label class="opt"><input type="radio" name="q40" value="D"> D) Language College</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="B" data-explain="David Hudson — director of Studies деп берілген. Сондықтан дұрыс жауап — B.">
-    <div class="qtitle">11. What is David Hudson?</div>
-    <label class="opt"><input type="radio" name="q41" value="A"> A) The professor of Language School</label>
-    <label class="opt"><input type="radio" name="q41" value="B"> B) The director of Studies</label>
-    <label class="opt"><input type="radio" name="q41" value="C"> C) The teacher of Cambridge Language School</label>
-    <label class="opt"><input type="radio" name="q41" value="D"> D) A tour guide of Cambridge Language School</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="D" data-explain="Тыңдалым мәтіні бойынша студенттер English тілін үйренеді. Дұрыс жауап — D.">
-    <div class="qtitle">12. What language will the students learn?</div>
-    <label class="opt"><input type="radio" name="q42" value="A"> A) German</label>
-    <label class="opt"><input type="radio" name="q42" value="B"> B) Spanish</label>
-    <label class="opt"><input type="radio" name="q42" value="C"> C) French</label>
-    <label class="opt"><input type="radio" name="q42" value="D"> D) English</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="D" data-explain="Аудио бойынша first class 11 o'clock-та басталады. Берілген жауап кілтінде дұрыс жауап — D.">
-    <div class="qtitle">13. When will their first class start?</div>
-    <label class="opt"><input type="radio" name="q43" value="A"> A) At 8 o'clock</label>
-    <label class="opt"><input type="radio" name="q43" value="B"> B) At 10 o'clock</label>
-    <label class="opt"><input type="radio" name="q43" value="C"> C) At 12 o'clock</label>
-    <label class="opt"><input type="radio" name="q43" value="D"> D) At 11 o'clock</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="A" data-explain="Турға барғысы келетін студенттер main gate of the school сыртында кездесуі керек. Дұрыс жауап — A.">
-    <div class="qtitle">14. Where should the students who want to go to the tour meet their tour guide?</div>
-    <label class="opt"><input type="radio" name="q44" value="A"> A) Outside the main gate of the school</label>
-    <label class="opt"><input type="radio" name="q44" value="B"> B) In the canteen</label>
-    <label class="opt"><input type="radio" name="q44" value="C"> C) On the ground floor of the school</label>
-    <label class="opt"><input type="radio" name="q44" value="D"> D) Next to the reception area of the school</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="A" data-explain="Аудио бойынша canteen ground floor-да орналасқан. Дұрыс жауап — A.">
-    <div class="qtitle">15. What floor is the canteen?</div>
-    <label class="opt"><input type="radio" name="q45" value="A"> A) On the ground floor</label>
-    <label class="opt"><input type="radio" name="q45" value="B"> B) On the 3rd floor</label>
-    <label class="opt"><input type="radio" name="q45" value="C"> C) Next to the reception area</label>
-    <label class="opt"><input type="radio" name="q45" value="D"> D) On the 2nd floor</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="listening" data-answer="C" data-explain="Бұл сұрақта дұрыс жауап кілті бойынша first class 11 o'clock-та басталады. Дұрыс жауап — C.">
-    <div class="qtitle">16. When will their first class start?</div>
-    <label class="opt"><input type="radio" name="q46" value="A"> A) At 8 o'clock</label>
-    <label class="opt"><input type="radio" name="q46" value="B"> B) At 10 o'clock</label>
-    <label class="opt"><input type="radio" name="q46" value="C"> C) At 11 o'clock</label>
-    <label class="opt"><input type="radio" name="q46" value="D"> D) At 12 o'clock</label>
-  </div>
-    <div class="reading-text">
-    <h3>Grammar</h3>
-    <p>17–34 сұрақтар. Грамматикалық ережелерге назар аударыңыз.</p>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="A" data-explain="It is important + to infinitive құрылымы қолданылады. Сондықтан дұрыс нұсқа: It is important to know your ancestors. «to knew», «to knowing» грамматикалық тұрғыдан қате.">
-    <div class="qtitle">17. It is important ____ your ancestors.</div>
-    <label class="opt"><input type="radio" name="q47" value="A"> A) to know</label>
-    <label class="opt"><input type="radio" name="q47" value="B"> B) to knew</label>
-    <label class="opt"><input type="radio" name="q47" value="C"> C) to knowing</label>
-    <label class="opt"><input type="radio" name="q47" value="D"> D) know</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="A" data-explain="My aunt’s home дегенде бір апайдың үйі туралы айтылып тұр. Singular possessive үшін apostrophe + s қолданылады: aunt’s. Сондықтан дұрыс жауап — A.">
-    <div class="qtitle">18. My ____ home is full of beautiful furniture. She is a designer.</div>
-    <label class="opt"><input type="radio" name="q48" value="A"> A) aunt’s</label>
-    <label class="opt"><input type="radio" name="q48" value="B"> B) uncles’</label>
-    <label class="opt"><input type="radio" name="q48" value="C"> C) aunts’</label>
-    <label class="opt"><input type="radio" name="q48" value="D"> D) uncle’s</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="A" data-explain="You have some on your shirt — дәл қазір нәтижесі көрініп тұр. Бұрын басталып, қазір әсері бар әрекет үшін Present Perfect Continuous қолданылады: Have you been eating chocolate?">
-    <div class="qtitle">19. Complete with the appropriate form of the verb: ____ you ____ chocolate? You have some on your shirt.</div>
-    <label class="opt"><input type="radio" name="q49" value="A"> A) Have / been eating</label>
-    <label class="opt"><input type="radio" name="q49" value="B"> B) Was / eating</label>
-    <label class="opt"><input type="radio" name="q49" value="C"> C) Did / eat</label>
-    <label class="opt"><input type="radio" name="q49" value="D"> D) Has / been eating</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="B" data-explain="Bread — саналмайтын зат есім. Саналмайтын зат есіммен little/a little қолданылады. Жауап кілті бойынша дұрыс жауап — Little bread.">
-    <div class="qtitle">20. There was only ____ left.</div>
-    <label class="opt"><input type="radio" name="q50" value="A"> A) Few bread</label>
-    <label class="opt"><input type="radio" name="q50" value="B"> B) Little bread</label>
-    <label class="opt"><input type="radio" name="q50" value="C"> C) Many bread</label>
-    <label class="opt"><input type="radio" name="q50" value="D"> D) A little bread</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="B" data-explain="Apples — саналатын көпше зат есім. Нақты сан айтылғанда cardinal number қолданылады: ten apples. Сондықтан дұрыс жауап — B.">
-    <div class="qtitle">21. There were ____ apples on the table.</div>
-    <label class="opt"><input type="radio" name="q51" value="A"> A) tenth</label>
-    <label class="opt"><input type="radio" name="q51" value="B"> B) ten</label>
-    <label class="opt"><input type="radio" name="q51" value="C"> C) tens</label>
-    <label class="opt"><input type="radio" name="q51" value="D"> D) the tenth</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="A" data-explain="Be afraid of + gerund/V-ing қолданылады. Сондықтан дұрыс нұсқа: I am afraid of making mistakes.">
-    <div class="qtitle">22. I am afraid of ____ mistakes.</div>
-    <label class="opt"><input type="radio" name="q52" value="A"> A) making</label>
-    <label class="opt"><input type="radio" name="q52" value="B"> B) to making</label>
-    <label class="opt"><input type="radio" name="q52" value="C"> C) made</label>
-    <label class="opt"><input type="radio" name="q52" value="D"> D) make</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="C" data-explain="Today сөзі бар және әрекет бүгін бірнеше рет болды. I бастауышымен Present Perfect: have + V3. See етістігінің V3 формасы — seen. Дұрыс жауап: have seen.">
-    <div class="qtitle">23. I ____ him today three times.</div>
-    <label class="opt"><input type="radio" name="q53" value="A"> A) had seen</label>
-    <label class="opt"><input type="radio" name="q53" value="B"> B) has seen</label>
-    <label class="opt"><input type="radio" name="q53" value="C"> C) have seen</label>
-    <label class="opt"><input type="radio" name="q53" value="D"> D) seen</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="B" data-explain="Take уақыт ұзақтығын сұрағанда How long does it take...? құрылымы қолданылады. Сондықтан дұрыс сұрақ: How long does it take to go from city center to countryside?">
-    <div class="qtitle">24. ____ does it take to go from city center to countryside?</div>
-    <label class="opt"><input type="radio" name="q54" value="A"> A) When</label>
-    <label class="opt"><input type="radio" name="q54" value="B"> B) How long</label>
-    <label class="opt"><input type="radio" name="q54" value="C"> C) How often</label>
-    <label class="opt"><input type="radio" name="q54" value="D"> D) What</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="D" data-explain="Made of glass тіркесінде material жалпы мағынада айтылып тұр. Glass алдында артикль қолданылмайды. Дұрыс жауап — нөлдік артикль.">
-    <div class="qtitle">25. This table is made of ____ glass.</div>
-    <label class="opt"><input type="radio" name="q55" value="A"> A) the</label>
-    <label class="opt"><input type="radio" name="q55" value="B"> B) a</label>
-    <label class="opt"><input type="radio" name="q55" value="C"> C) an</label>
-    <label class="opt"><input type="radio" name="q55" value="D"> D) –</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="A" data-explain="-ing сын есімі заттың/жағдайдың қандай екенін көрсетеді: boring job. -ed сын есімі адамның сезімін білдіреді: Kate is bored. Сондықтан дұрыс жауап: boring/bored.">
-    <div class="qtitle">26. Kate’s job is ____, so Kate is ____.</div>
-    <label class="opt"><input type="radio" name="q56" value="A"> A) boring / bored</label>
-    <label class="opt"><input type="radio" name="q56" value="B"> B) boring / boring</label>
-    <label class="opt"><input type="radio" name="q56" value="C"> C) bored / boring</label>
-    <label class="opt"><input type="radio" name="q56" value="D"> D) bored / bored</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="D" data-explain="Негізгі етістік past tense: Rachel thought. Бұрын болған әрекет одан да ертерек болғанын көрсету үшін Past Perfect қолданылады: had seen. Дұрыс жауап: thought/had seen.">
-    <div class="qtitle">27. Rachel ____ that she ____ the visitor before.</div>
-    <label class="opt"><input type="radio" name="q57" value="A"> A) thought / saw</label>
-    <label class="opt"><input type="radio" name="q57" value="B"> B) thinks / sees</label>
-    <label class="opt"><input type="radio" name="q57" value="C"> C) is thinking / sees</label>
-    <label class="opt"><input type="radio" name="q57" value="D"> D) thought / had seen</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="D" data-explain="Ағылшын тілінде adjective көбіне noun алдында тұрады, бірақ seem сияқты linking verb-тен кейін adjective predicative position-да қолданылады: The price seemed high. Бұл сөйлем грамматикалық дұрыс.">
-    <div class="qtitle">28. Choose the sentence with correct position of an adjective.</div>
-    <label class="opt"><input type="radio" name="q58" value="A"> A) The price high surprised him.</label>
-    <label class="opt"><input type="radio" name="q58" value="B"> B) He reported price high at the meeting.</label>
-    <label class="opt"><input type="radio" name="q58" value="C"> C) He was shocked with high so the price.</label>
-    <label class="opt"><input type="radio" name="q58" value="D"> D) The price seemed high.</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="B" data-explain="Advise + object + to infinitive құрылымы қолданылады: He advised me to wait. Сондықтан дұрыс жауап — to wait.">
-    <div class="qtitle">29. He advised me ____ until tomorrow.</div>
-    <label class="opt"><input type="radio" name="q59" value="A"> A) Wait</label>
-    <label class="opt"><input type="radio" name="q59" value="B"> B) To wait</label>
-    <label class="opt"><input type="radio" name="q59" value="C"> C) Waiting</label>
-    <label class="opt"><input type="radio" name="q59" value="D"> D) Waited</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="A" data-explain="I wish + past form қазіргі уақытта шындыққа сай келмейтін тілекті білдіреді: I wish I could speak French. Нәтижесін would + verb арқылы береміз: would understand. Дұрыс жауап — A.">
-    <div class="qtitle">30. I wish I ____ French, then I ____ what the guide is talking about.</div>
-    <label class="opt"><input type="radio" name="q60" value="A"> A) could speak, would understand</label>
-    <label class="opt"><input type="radio" name="q60" value="B"> B) would be able to speak, understood</label>
-    <label class="opt"><input type="radio" name="q60" value="C"> C) can speak, understand</label>
-    <label class="opt"><input type="radio" name="q60" value="D"> D) can speak, would understood</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="B" data-explain="Ever сөзімен superlative degree жиі қолданылады: the most annoyed man ever. Сондықтан дұрыс жауап — the most.">
-    <div class="qtitle">31. He seemed to me ____ annoyed man ever.</div>
-    <label class="opt"><input type="radio" name="q61" value="A"> A) more and more</label>
-    <label class="opt"><input type="radio" name="q61" value="B"> B) the most</label>
-    <label class="opt"><input type="radio" name="q61" value="C"> C) more</label>
-    <label class="opt"><input type="radio" name="q61" value="D"> D) the more</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="B" data-explain="Talk about + gerund/V-ing қолданылады. Сондықтан дұрыс сөйлем: We talked about going to Europe next summer.">
-    <div class="qtitle">32. We talked about ____ to Europe next summer.</div>
-    <label class="opt"><input type="radio" name="q62" value="A"> A) Go</label>
-    <label class="opt"><input type="radio" name="q62" value="B"> B) Going</label>
-    <label class="opt"><input type="radio" name="q62" value="C"> C) Went</label>
-    <label class="opt"><input type="radio" name="q62" value="D"> D) Gone</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="D" data-explain="Admit + gerund/V-ing қолданылады: admitted cheating. Сондықтан дұрыс жауап — cheating.">
-    <div class="qtitle">33. Cheating is forbidden at the university in spite of the fact he admitted ____ on the test.</div>
-    <label class="opt"><input type="radio" name="q63" value="A"> A) is cheating</label>
-    <label class="opt"><input type="radio" name="q63" value="B"> B) to cheat</label>
-    <label class="opt"><input type="radio" name="q63" value="C"> C) to cheating</label>
-    <label class="opt"><input type="radio" name="q63" value="D"> D) cheating</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="grammar" data-answer="D" data-explain="Permit + object + to infinitive құрылымы қолданылады: She permitted the children to stay up late. Сондықтан дұрыс жауап — to stay.">
-    <div class="qtitle">34. She permitted the children ____ up late.</div>
-    <label class="opt"><input type="radio" name="q64" value="A"> A) stayed</label>
-    <label class="opt"><input type="radio" name="q64" value="B"> B) are staying</label>
-    <label class="opt"><input type="radio" name="q64" value="C"> C) stay</label>
-    <label class="opt"><input type="radio" name="q64" value="D"> D) to stay</label>
-  </div>
-
-  <div class="reading-text">
-    <h3>Reading — Text 1: The Statue of Liberty</h3>
-    <p>The Statue of Liberty, arguably one of New York City's most iconic symbols, is a popular tourist attraction for first-time visitors to the city. This 150-foot monument was gifted to the United States from France in order to celebrate 100 years of America's independence. The statue is located on Liberty Island, and it is accessible by taking a ferry from either Battery Park in New York City or Liberty State Park in Jersey City.</p>
-    <p>When Claire visited the Statue of Liberty for the first time, she instantly admired it as a symbol of freedom. Claire made sure to make reservations before her visit because only 240 people are permitted to climb the staircase to the top of the statue every day. After climbing almost 400 stairs, Claire received spectacular views of the city from the statue's crown.</p>
-    <p>During her visit, Claire learned that the Statue of Liberty was not always the color that it is now. She found out that because the statue's exterior is made of copper, the statue oxidized over time, giving it the greenish appearance it has in present day.</p>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="B" data-explain="Мәтінде the monument was gifted to the United States from France деп берілген. Сондықтан дұрыс жауап — The French.">
-    <div class="qtitle">35. Who gifted the Statue of Liberty to the United States?</div>
-    <label class="opt"><input type="radio" name="q65" value="A"> A) The British</label>
-    <label class="opt"><input type="radio" name="q65" value="B"> B) The French</label>
-    <label class="opt"><input type="radio" name="q65" value="C"> C) The Spanish</label>
-    <label class="opt"><input type="radio" name="q65" value="D"> D) The Dutch</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="A" data-explain="Мәтінде 100 years of America's independence деп нақты көрсетілген. Дұрыс жауап — 100.">
-    <div class="qtitle">36. This 150-foot monument was gifted to celebrate ____ years of America's independence.</div>
-    <label class="opt"><input type="radio" name="q66" value="A"> A) 100</label>
-    <label class="opt"><input type="radio" name="q66" value="B"> B) 120</label>
-    <label class="opt"><input type="radio" name="q66" value="C"> C) 140</label>
-    <label class="opt"><input type="radio" name="q66" value="D"> D) 150</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="D" data-explain="A century дегеніміз 100 жыл. Мәтінде Америка тәуелсіздігінің 100 жылдығын атап өту үшін берілгені айтылған. Дұрыс жауап — D.">
-    <div class="qtitle">37. What was the Statue of Liberty intended to celebrate?</div>
-    <label class="opt"><input type="radio" name="q67" value="A"> A) Open immigration to the United States</label>
-    <label class="opt"><input type="radio" name="q67" value="B"> B) The end of the Civil War</label>
-    <label class="opt"><input type="radio" name="q67" value="C"> C) Economic recovery from the Great Depression</label>
-    <label class="opt"><input type="radio" name="q67" value="D"> D) A century of American independence</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="C" data-explain="Мәтінде only 240 people are permitted to climb деп жазылған. Сондықтан дұрыс жауап — 240.">
-    <div class="qtitle">38. How many people are permitted to climb the statue's stairs per day?</div>
-    <label class="opt"><input type="radio" name="q68" value="A"> A) 100</label>
-    <label class="opt"><input type="radio" name="q68" value="B"> B) 150</label>
-    <label class="opt"><input type="radio" name="q68" value="C"> C) 240</label>
-    <label class="opt"><input type="radio" name="q68" value="D"> D) 400</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="C" data-explain="Мәтінде This 150-foot monument деп берілген. Дұрыс жауап — 150.">
-    <div class="qtitle">39. This ____-foot monument was gifted to the United States from France.</div>
-    <label class="opt"><input type="radio" name="q69" value="A"> A) 50</label>
-    <label class="opt"><input type="radio" name="q69" value="B"> B) 100</label>
-    <label class="opt"><input type="radio" name="q69" value="C"> C) 150</label>
-    <label class="opt"><input type="radio" name="q69" value="D"> D) 200</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="D" data-explain="Мәтінде Claire received spectacular views from the statue's crown деп айтылған. Сондықтан дұрыс жауап — the crown.">
-    <div class="qtitle">40. From which part of the statue did Claire receive spectacular views of the city?</div>
-    <label class="opt"><input type="radio" name="q70" value="A"> A) The mouth</label>
-    <label class="opt"><input type="radio" name="q70" value="B"> B) The nose</label>
-    <label class="opt"><input type="radio" name="q70" value="C"> C) The eyes</label>
-    <label class="opt"><input type="radio" name="q70" value="D"> D) The crown</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="C" data-explain="Мәтінде After climbing almost 400 stairs деп берілген. Сондықтан дұрыс жауап — 400.">
-    <div class="qtitle">41. After climbing almost ____ stairs, Claire received spectacular views.</div>
-    <label class="opt"><input type="radio" name="q71" value="A"> A) 200</label>
-    <label class="opt"><input type="radio" name="q71" value="B"> B) 300</label>
-    <label class="opt"><input type="radio" name="q71" value="C"> C) 400</label>
-    <label class="opt"><input type="radio" name="q71" value="D"> D) 500</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="A" data-explain="Мәтінде statue's exterior is made of copper, the statue oxidized over time деп айтылған. Copper oxidized — мыс тотығып, түсі жасылданған. Дұрыс жауап — A.">
-    <div class="qtitle">42. Why has the Statue of Liberty changed color over time?</div>
-    <label class="opt"><input type="radio" name="q72" value="A"> A) Its copper exterior oxidized.</label>
-    <label class="opt"><input type="radio" name="q72" value="B"> B) It was painted green during restorations.</label>
-    <label class="opt"><input type="radio" name="q72" value="C"> C) The statue is poorly maintained by the city.</label>
-    <label class="opt"><input type="radio" name="q72" value="D"> D) New York's poor air quality has eroded the statue.</label>
-  </div>
-
-  <div class="reading-text">
-    <h3>Reading — Text 2: Miami</h3>
-    <p>Christina visited Miami during her winter vacation. She is from Boston, where it is cold during the winter months. Miami, however, has a very warm climate. There are many sunny days in Miami, and people can go to the beach all year long.</p>
-    <p>Inspired by Miami's proximity to the ocean, Christina visited the Miami Seaquarium to learn about marine life. Christina also took an excursion to the Everglades National Park. This park is a protected area spanning 1.5 million acres. Because the park is mostly swampland, it is home to many reptiles. Native animals include snakes, alligators, and crocodiles.</p>
-    <p>When Christina returned to the city, she visited Little Havana. This is Miami's Cuban neighborhood. Little Havana was Christina's favorite part about her trip to Miami.</p>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="B" data-explain="Boston қыста суық, ал Miami warm climate деп сипатталған. Сондықтан Miami қысқы ауа райы жылырақ. Дұрыс жауап — B.">
-    <div class="qtitle">43. In comparison to Christina's hometown, Miami's winter weather is:</div>
-    <label class="opt"><input type="radio" name="q73" value="A"> A) Cooler</label>
-    <label class="opt"><input type="radio" name="q73" value="B"> B) Warmer</label>
-    <label class="opt"><input type="radio" name="q73" value="C"> C) More humid</label>
-    <label class="opt"><input type="radio" name="q73" value="D"> D) The same</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="C" data-explain="Мәтінде Inspired by Miami's proximity to the ocean деп айтылған. Яғни оны Miami-дің мұхитқа жақындығы шабыттандырған. Дұрыс жауап — C.">
-    <div class="qtitle">44. Why was Christina motivated to visit the Miami Seaquarium?</div>
-    <label class="opt"><input type="radio" name="q74" value="A"> A) She wanted to protest animal rights.</label>
-    <label class="opt"><input type="radio" name="q74" value="B"> B) She hoped to photograph the sea creatures.</label>
-    <label class="opt"><input type="radio" name="q74" value="C"> C) Miami's coastal location inspired her.</label>
-    <label class="opt"><input type="radio" name="q74" value="D"> D) The Seaquarium was recently constructed.</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="C" data-explain="Everglades мәтінінде snakes, alligators, crocodiles және birds туралы айтылған. Dolphins теңіз жануары, Everglades-та native animal ретінде берілмеген. Дұрыс жауап — C.">
-    <div class="qtitle">45. Which of the following animals would not be found in the Everglades?</div>
-    <label class="opt"><input type="radio" name="q75" value="A"> A) Crocodiles</label>
-    <label class="opt"><input type="radio" name="q75" value="B"> B) Birds</label>
-    <label class="opt"><input type="radio" name="q75" value="C"> C) Dolphins</label>
-    <label class="opt"><input type="radio" name="q75" value="D"> D) Snakes</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="B" data-explain="Мәтінде Everglades National Park spanning 1.5 million acres деп берілген. Дұрыс жауап — B.">
-    <div class="qtitle">46. Everglades National Park is a protected area spanning ____ million acres.</div>
-    <label class="opt"><input type="radio" name="q76" value="A"> A) 0.5</label>
-    <label class="opt"><input type="radio" name="q76" value="B"> B) 1.5</label>
-    <label class="opt"><input type="radio" name="q76" value="C"> C) 2.5</label>
-    <label class="opt"><input type="radio" name="q76" value="D"> D) 3.5</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="D" data-explain="Мәтінде Little Havana is Miami's Cuban neighborhood деп жазылған. Сондықтан бұл ауданның identity Cuban culture-ға негізделген. Дұрыс жауап — D.">
-    <div class="qtitle">47. Little Havana's identity is based on what particular culture?</div>
-    <label class="opt"><input type="radio" name="q77" value="A"> A) American culture</label>
-    <label class="opt"><input type="radio" name="q77" value="B"> B) Dominican culture</label>
-    <label class="opt"><input type="radio" name="q77" value="C"> C) Mexican culture</label>
-    <label class="opt"><input type="radio" name="q77" value="D"> D) Cuban culture</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="D" data-explain="Мәтінде Native animals include snakes, alligators, and crocodiles деп берілген. Сондықтан бос орынға snakes қойылады. Дұрыс жауап — D.">
-    <div class="qtitle">48. Native animals include ____, alligators, and crocodiles.</div>
-    <label class="opt"><input type="radio" name="q78" value="A"> A) elephants</label>
-    <label class="opt"><input type="radio" name="q78" value="B"> B) spiders</label>
-    <label class="opt"><input type="radio" name="q78" value="C"> C) wolves</label>
-    <label class="opt"><input type="radio" name="q78" value="D"> D) snakes</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="B" data-explain="Мәтінде Christina enjoyed hiking the trails in the Everglades деп нақты берілген. Дұрыс жауап — B.">
-    <div class="qtitle">49. Christina enjoyed hiking the trails in the ____ and observing the wildlife.</div>
-    <label class="opt"><input type="radio" name="q79" value="A"> A) Gateway Arch</label>
-    <label class="opt"><input type="radio" name="q79" value="B"> B) Everglades</label>
-    <label class="opt"><input type="radio" name="q79" value="C"> C) Guadalupe Mountains</label>
-    <label class="opt"><input type="radio" name="q79" value="D"> D) Acadia</label>
-  </div>
-
-  <div class="q" data-block="english" data-sub="reading" data-answer="D" data-explain="Мәтінде Little Havana was Christina's favorite part about her trip to Miami деп берілген. Сондықтан дұрыс жауап — Touring Little Havana.">
-    <div class="qtitle">50. What was Christina's favorite part about her trip to Miami?</div>
-    <label class="opt"><input type="radio" name="q80" value="A"> A) Sunbathing on the beach</label>
-    <label class="opt"><input type="radio" name="q80" value="B"> B) Visiting the Miami Seaquarium</label>
-    <label class="opt"><input type="radio" name="q80" value="C"> C) Hiking the trails of the Everglades</label>
-    <label class="opt"><input type="radio" name="q80" value="D"> D) Touring Little Havana</label>
-  </div>
+  <div id="englishQuestions"></div>
+  <div class="block-result" id="englishResult"></div>
 </section>
 
 <section class="final-card" id="finish">
@@ -1170,126 +425,265 @@ audio{
   <div class="result" id="result"></div>
 </section>
 
-</form>
-
 <div class="footer">
-  © @elnazm_ln — Сайтты көшіруге, қайта сатуға және таратуға тыйым салынады.
+  © @elnazm_ln — Сайтты сатуға болмайды.
 </div>
 </main>
 
 <script>
-function showResults(){
-  const questions = document.querySelectorAll(".q[data-answer]");
-  const totals = {
-    critical:{name:"Сыни ойлау", total:0, score:0},
-    analytical:{name:"Аналитикалық ойлау", total:0, score:0},
-    english:{name:"Ағылшын тілі", total:0, score:0},
-    listening:{name:"Listening", total:0, score:0},
-    grammar:{name:"Grammar", total:0, score:0},
-    reading:{name:"Reading", total:0, score:0}
-  };
+const critical = [
+{q:"1. Бағанды салыстырыңыз: A шамасы = 3/4, B шамасы = 2/13", a:"D", ex:"A шамасы 3/4 = 0,75. B шамасы 2/13 ≈ 0,15. 0,75 саны 0,15-тен үлкен. Сондықтан B < A. Дұрыс жауап: D.", opts:["A) B > A","B) B = 3A","C) B = A","D) B < A","E) B > 3A"]},
+{q:"2. Теледидардың негізгі бағасы 150 000 теңге. 15%-ға арзандатылған бағасын табыңыз.", a:"B", ex:"150 000 теңгенің 15%-ы: 150000 × 0,15 = 22500. 150000 − 22500 = 127500 теңге. Дұрыс жауап: B.", opts:["A) 125 000 тг","B) 127 500 тг","C) 110 000 тг","D) 115 000 тг","E) 113 000 тг"]},
+{q:"3. 6 − 4(z − 2) + 2 = 4 − 2(z − 4), теңдеудегі z-тің мәні.", a:"C", ex:"Теңдеуді ашамыз: 16−4z = 12−2z. Сонда 4 = 2z, z = 2. Дұрыс жауап: C.", opts:["A) 0","B) −3","C) 2","D) −2","E) 3"]},
+{q:"4. (y − 3) / 6 = 7 / 3 теңдеуіндегі y мәні.", a:"B", ex:"Айқастырып көбейтеміз: 3(y−3)=42. 3y−9=42, 3y=51, y=17. Дұрыс жауап: B.", opts:["A) 16","B) 17","C) 18","D) 19","E) 20"]},
+{q:"5. 2(3x + 1) − x ≤ 3(x + 4), теңсіздікті шешіңіз.", a:"B", ex:"6x+2−x ≤ 3x+12. 5x+2 ≤ 3x+12. 2x ≤ 10, x ≤ 5. Дұрыс жауап: B.", opts:["A) x ≤ 4","B) x ≤ 5","C) x ≤ −5","D) x > 5","E) x > −5"]},
+{q:"6. Берілген бөлшекті теңдеудің шешімі.", a:"A", ex:"Жауап кілті бойынша теңдеудің шешімі x = −1. Дұрыс жауап: A.", opts:["A) −1","B) 2","C) 1","D) 4","E) 3"]},
+{q:"7. Диаграмманы пайдаланып, Бибарыс Аружаннан қанша ұпай кем жинағанын анықтаңыз.", a:"A", ex:"Диаграмма бойынша Аружан 60 ұпай, Бибарыс 40 ұпай. 60−40=20. Дұрыс жауап: A.", img:"IMG_0909.jpeg", opts:["A) 20","B) 30","C) 15","D) 18","E) 10"]},
+{q:"8. Диаметрі 30 см болатын шеңбердің радиусын табыңыз.", a:"B", ex:"Радиус диаметрдің жартысына тең. 30/2 = 15 см. Дұрыс жауап: B.", opts:["A) 10 см","B) 15 см","C) 20 см","D) 25 см","E) 30 см"]},
+{q:"9. A нүктесінің координатасы (8;6), [OA] кесіндісінің ортасы B нүктесінің координатасын табыңыз.", a:"A", ex:"O(0;0), A(8;6). Ортасы: ((0+8)/2; (0+6)/2) = (4;3). Дұрыс жауап: A.", opts:["A) (4;3)","B) (3;4)","C) (2;−4)","D) (5;6)","E) (8;−6)"]},
+{q:"10. x = 2, y = 3. A шамасы: (2x + y)², B шамасы: (x + 2y)². Салыстырыңыз.", a:"D", ex:"A=(4+3)²=49. B=(2+6)²=64. 64 > 49, сондықтан B шамасы үлкен. Дұрыс жауап: D.", opts:["A) Берілген мәлімет жеткіліксіз","B) A шамасы үлкен","C) Шамалар тең","D) B шамасы үлкен"]},
+{q:"11. Үшбұрыштың табаны 24 см, биіктігі 11 см. Ауданын табыңыз.", a:"C", ex:"S = 1/2 · a · h = 1/2 · 24 · 11 = 132 см². Дұрыс жауап: C.", opts:["A) 264 см²","B) 528 см²","C) 132 см²","D) 176 см²","E) 576 см²"]},
+{q:"12. 8a ≤ y ≤ 9a және 5a ≤ x ≤ 6a теңсіздіктерін қанағаттандыратын x және y мәндері сандарының бөліндісі.", a:"A", ex:"Жауап кілті бойынша дұрыс жауап 1. Мұнда екі аралықтағы мәндер саны бірдей деп алынады. Дұрыс жауап: A.", opts:["A) 1","B) 2","C) 3","D) 4","E) 5"]},
+{q:"13. Суреттегі F фигура ауданына D фигура ауданынан артық шамасына E ауданының қосындысы x тиісті болатын аралық.", a:"A", ex:"Сурет бойынша есептегенде нәтиже 6 мен 8 аралығына түседі. Дұрыс жауап: A.", img:"IMG_0910.jpeg", opts:["A) 6 ≤ x ≤ 8","B) 1 ≤ x ≤ 4","C) 1 ≤ x ≤ 3","D) 2 ≤ x ≤ 6","E) 3 ≤ x ≤ 6"]},
+{q:"14. x = (5a5 + 304 − 3a4) / 5, теңдеудегі x-тің мәні.", a:"A", ex:"Жауап кілті бойынша дұрыс мән — 101. Дұрыс жауап: A.", opts:["A) 101","B) 1a2","C) 1a1","D) 100","E) 1a0"]},
+{q:"15. Дүкендегі ойыншықтардың бағасы бойынша өрнекті салыстырыңыз.", a:"B", ex:"A=1200, B=800, C=1400, D=3200. A+B+C=3400. 3400 > 3200, сондықтан A+B+C > D. Дұрыс жауап: B.", img:"IMG_0911.jpeg", opts:["A) A + C > D","B) A + B + C > D","C) A + C + B = D","D) 3A + C < B + D","E) A + C − B = D"]}
+];
 
-  let totalScore = 0;
-  let totalCount = questions.length;
-  let details = "";
+const analytical = [
+{q:"16. Қазақ мемлекеті үш жүзге бөлінген: Ұлы жүз, Орта жүз, [...] жүз.", a:"C", ex:"Қазақ халқы үш жүзге бөлінеді: Ұлы жүз, Орта жүз, Кіші жүз. Дұрыс жауап: C.", opts:["A) Биік","B) Орта","C) Кіші","D) Мықты","E) Кенже"]},
+{q:"17. Мақалды аяқтаңыз: Жігітке [...] өнер де аз болады.", a:"A", ex:"Дұрыс мақал: «Жігітке жеті өнер де аз». Дұрыс жауап: A.", opts:["A) жеті","B) бес","C) бір","D) төрт","E) жүз"]},
+{q:"18. Жамбыл Жабаев — қазақ халқының ұлы ақыны. Ол [...] жасаған адам.", a:"B", ex:"Жамбыл Жабаев жүз жасқа жуық өмір сүрген ақын ретінде белгілі. Дұрыс жауап: B.", opts:["A) жүз он","B) жүз","C) тоқсан","D) тоқсан бес","E) жүз бес"]},
+{type:"text", title:"Сегізаяқ туралы мәтін", text:"Сегізаяқ – ең ақылды және толық зерттеле қоймаған моллюска түрі. Оның денесіндегі уға толы қалташасы жақсы қорғану мен аң аулауға мүмкіндік береді. Егер қауіп төнсе, ол улы сиясын шашып жібереді. Сонымен қатар жаудың иіс сезу мүшесін нашарлататын сұйық зат бөледі. Қиын жағдайда өңін өзгерте алады."},
+{q:"19. Егер сегізаяққа қауіп төнсе, ол улы [...] шашып жібереді.", a:"A", ex:"Мәтінде «улы сиясын шашып жібереді» деп берілген. Дұрыс жауап: A.", opts:["A) сиясын","B) уын","C) қанын","D) суын","E) сөлін"]},
+{q:"20. Мәтіндегі «өңін» сөзінің мағынасына жақын сөзді табыңыз.", a:"E", ex:"«Өңін» сөзі түр, келбет, рең, бет-әлпет мағыналарына жақын. Сондықтан барлық жауап дұрыс. Дұрыс жауап: E.", opts:["A) түрін","B) келбетін","C) реңін","D) бет әлпетін","E) көрсетілген барлық жауап дұрыс"]},
+{q:"21. Оның денесіндегі уға толы қалташасының қызметі қандай?", a:"C", ex:"Мәтінде уға толы қалташа қорғану мен аң аулауға мүмкіндік беретіні айтылған. Дұрыс жауап: C.", opts:["A) жақсы қорғану","B) тез жүзу","C) жақсы қорғану және аң аулау","D) тез жүзу және аң аулау","E) аң аулау"]},
+{type:"text", title:"Бөгенбай батыр туралы мәтін", text:"Бөгенбай – Абылай хан тұсындағы батыр, атақты қолбасшы. Оны халық «Қанжығалы Бөгенбай» деп атап кеткен. Сырдария өзенінің жағасында дүниеге келген. Өзіне жақын адамдардан топ құрып, ол кейін елде «Қанжығалының қырық батыры» деп аталып кеткен."},
+{q:"22. «Қанжығалының қырық батыры» деп не аталды?", a:"E", ex:"Мәтінде бұл Бөгенбай құрған топ екені айтылған. Дұрыс жауап: E.", opts:["A) Батырдың әкесі құрған топ","B) Сарай күзетшілері","C) Хан әскері","D) Батыр бастаған қол","E) Бөгенбай құрған топ"]},
+{q:"23. Бөгенбай батыр қай өзеннің жағасында дүниеге келген?", a:"D", ex:"Мәтінде Бөгенбайдың Сырдария өзенінің жағасында дүниеге келгені айтылған. Дұрыс жауап: D.", opts:["A) Еділ","B) Ертіс","C) Шу","D) Сырдария","E) Есіл"]},
+{q:"24. Мәтіндегі «атақты» сөзінің мағынасына жақын сөзді табыңыз.", a:"C", ex:"«Атақты» сөзіне ең жақын сөз — «әйгілі». Дұрыс жауап: C.", opts:["A) айқын","B) ерекше","C) әйгілі","D) асқан","E) дара"]},
+{type:"text", title:"Жеті жарғы туралы мәтін", text:"Жеті жарғы – Тәуке хан тұсында қабылданған қазақ халқының дәстүрлі әдеп-ғұрып заңдарының жинағы. Үш жүздің игі жақсылары мен билерін жинап, Күлтөбенің басында «Тәуке ханның Жеті жарғысы» деген заңдар жиынтығын қабылдады."},
+{q:"25. Тәуке ханның «Жеті жарғысы» қабылданған жер:", a:"C", ex:"Мәтінде заңдар жиынтығы Күлтөбенің басында қабылданғаны айтылған. Дұрыс жауап: C.", opts:["A) Отырар","B) Ұлытау","C) Күлтөбе","D) Төрткөл","E) Шортөбе"]},
+{q:"26. «Жарғы» сөзінің мағынасы:", a:"D", ex:"Жауап кілті бойынша бұл сұрақтың дұрыс жауабы — «Әділдік». Дұрыс жауап: D.", opts:["A) Жүйе","B) Жаза","C) Билік","D) Әділдік","E) Заң"]},
+{q:"27. Мәтіндегі «ескі» сөзінің антонимін табыңыз.", a:"C", ex:"«Ескі» сөзінің антонимі — «жаңа». Дұрыс жауап: C.", opts:["A) әділ","B) көне","C) жаңа","D) ерте","E) ашық"]},
+{type:"text", title:"Балықтар туралы мәтін", text:"Балықтар – судағы тіршілікке бейімделген жануарлар. Олар өкпе арқылы емес, желбезек арқылы тыныс алады. Балықтар үш топқа бөлінеді: жақсыз, шеміршекті және сүйекті балықтар. Балық – адам үшін қажетті белокқа бай тағам көзі."},
+{q:"28. Балықтардың тыныс алу мүшесі:", a:"C", ex:"Мәтінде балықтар желбезек арқылы тыныс алады деп берілген. Дұрыс жауап: C.", opts:["A) кеңірдек","B) өкпе","C) желбезек","D) көкірек","E) қанат"]},
+{q:"29. Балықтар үш топқа бөлінеді:", a:"C", ex:"Мәтінде балықтар жақсыз, шеміршекті және сүйекті болып бөлінеді. Дұрыс жауап: C.", opts:["A) жақсыз, шеміршексіз, сүйекті","B) жақсыз, шеміршекті, қанатты","C) жақсыз, шеміршекті, сүйекті","D) жақты, шеміршекті, қанатты","E) жақсыз, шеміршексіз, қанатты"]},
+{q:"30. Балық – адам үшін қажетті ___ бай тағам көзі.", a:"C", ex:"Мәтінде «белокқа бай тағам көзі» деп берілген. Дұрыс жауап: C.", opts:["A) нәруызге","B) майға","C) белокқа","D) көмірсуларға","E) қышқылға"]}
+];
 
-  questions.forEach((q, index) => {
-    const block = q.dataset.block;
-    const sub = q.dataset.sub;
-    const correct = q.dataset.answer;
-    const explain = q.dataset.explain || "Бұл сұрақтың дұрыс жауабы берілген мәтінге немесе ережеге сәйкес анықталады.";
-    const checked = q.querySelector("input[type='radio']:checked");
+const english = [
+{type:"text", title:"Listening", text:"1–16 сұрақтарды аудио бойынша орындаңыз."},
+{q:"1. English is the first language in ____.", a:"B", ex:"Аудио бойынша English бірінші тіл ретінде 12 елде қолданылады. Дұрыс жауап: B.", sub:"listening", opts:["A) 10 countries","B) 12 countries","C) 2 countries","D) 15 countries"]},
+{q:"2. What is the number of English speakers in the countries where English is the first language?", a:"B", ex:"Аудио бойынша English бірінші тіл болатын елдердегі сөйлеушілер саны 350 млн. Дұрыс жауап: B.", sub:"listening", opts:["A) 25 mln","B) 350 mln","C) 550 mln","D) 100 mln"]},
+{q:"3. What are the most frequent words in English?", a:"A", ex:"Ең жиі қолданылатын сөздер: the, and, to, in, is. Дұрыс жауап: A.", sub:"listening", opts:["A) The, and, to, in, is","B) Sure, between, rather","C) Interesting, comfortable","D) She, he, it, they"]},
+{q:"4. People use English as the second language in ____.", a:"D", ex:"Аудиода English екінші тіл ретінде 33 елде қолданылады деп айтылған. Дұрыс жауап: D.", sub:"listening", opts:["A) 10 countries","B) 15 countries","C) 7 countries","D) 33 countries"]},
+{q:"5. What foreign languages are the most studied?", a:"D", ex:"Аудиода ең көп оқылатын тілдер English, French, Spanish деп берілген. Дұрыс жауап: D.", sub:"listening", opts:["A) Hungarian, Czech, Slovak","B) English, Japanese, Polish","C) English, Hindi, Greek","D) English, French, Spanish"]},
+{q:"6. Which of the following is true about English?", a:"A", ex:"Мәтін бойынша көп адам ағылшын тілін үйренуге қызығады. Дұрыс жауап: A.", sub:"listening", opts:["A) Many people are interested in learning it","B) It is spoken only in Britain","C) It is a very easy language to learn","D) It is an unknown language"]},
+{q:"7. What sphere of English usage isn't mentioned?", a:"B", ex:"Diplomacy, commerce, science, sports айтылған, agriculture айтылмаған. Дұрыс жауап: B.", sub:"listening", opts:["A) diplomacy","B) agriculture","C) commerce","D) science","E) sports"]},
+{q:"8. What is the number of English speakers in the countries where English is the first language?", a:"C", ex:"Жауап кілті бойынша дұрыс жауап 350 mln. Дұрыс жауап: C.", sub:"listening", opts:["A) 150 mln","B) 250 mln","C) 350 mln","D) 450 mln"]},
+{q:"9. When will the tour start?", a:"D", ex:"Аудио бойынша tour 3.00-де басталады. Дұрыс жауап: D.", sub:"listening", opts:["A) At 2.00 on the dot","B) At 9.30 on the dot","C) At 1.30 on the dot","D) At 3.00 on the dot"]},
+{q:"10. What language school does David Hudson manage?", a:"A", ex:"David Hudson Cambridge Language School-ды басқарады. Дұрыс жауап: A.", sub:"listening", opts:["A) Cambridge Language School","B) Grammar School","C) Sharon Black School","D) Language College"]},
+{q:"11. What is David Hudson?", a:"B", ex:"David Hudson — director of Studies. Дұрыс жауап: B.", sub:"listening", opts:["A) The professor of Language School","B) The director of Studies","C) The teacher of Cambridge Language School","D) A tour guide"]},
+{q:"12. What language will the students learn?", a:"D", ex:"Студенттер English тілін үйренеді. Дұрыс жауап: D.", sub:"listening", opts:["A) German","B) Spanish","C) French","D) English"]},
+{q:"13. When will their first class start?", a:"D", ex:"Жауап кілті бойынша first class 11 o'clock-та басталады. Дұрыс жауап: D.", sub:"listening", opts:["A) At 8 o'clock","B) At 10 o'clock","C) At 12 o'clock","D) At 11 o'clock"]},
+{q:"14. Where should students meet their tour guide?", a:"A", ex:"Олар school main gate сыртында кездесуі керек. Дұрыс жауап: A.", sub:"listening", opts:["A) Outside the main gate of the school","B) In the canteen","C) On the ground floor","D) Next to the reception area"]},
+{q:"15. What floor is the canteen?", a:"A", ex:"Canteen ground floor-да орналасқан. Дұрыс жауап: A.", sub:"listening", opts:["A) On the ground floor","B) On the 3rd floor","C) Next to the reception area","D) On the 2nd floor"]},
+{q:"16. When will their first class start?", a:"C", ex:"Бұл нұсқада 11 o'clock C нұсқасында тұр. Дұрыс жауап: C.", sub:"listening", opts:["A) At 8 o'clock","B) At 10 o'clock","C) At 11 o'clock","D) At 12 o'clock"]},
 
-    totals[block].total++;
-    if(sub && totals[sub]) totals[sub].total++;
+{type:"text", title:"Grammar", text:"17–34 сұрақтар. Грамматикалық ережелерге назар аударыңыз."},
+{q:"17. It is important ____ your ancestors.", a:"A", ex:"It is important + to infinitive құрылымы қолданылады. Сондықтан дұрыс нұсқа: to know. «to knew» және «to knowing» қате.", sub:"grammar", opts:["A) to know","B) to knew","C) to knowing","D) know"]},
+{q:"18. My ____ home is full of beautiful furniture. She is a designer.", a:"A", ex:"She is a designer дегені бір әйел адамды білдіреді. Бір адамға тиесілі зат үшін aunt’s қолданылады. Дұрыс жауап: A.", sub:"grammar", opts:["A) aunt’s","B) uncles’","C) aunts’","D) uncle’s"]},
+{q:"19. ____ you ____ chocolate? You have some on your shirt.", a:"A", ex:"Киімінде шоколад бар, яғни әрекеттің нәтижесі қазір көрініп тұр. Сондықтан Present Perfect Continuous: Have you been eating. Дұрыс жауап: A.", sub:"grammar", opts:["A) Have / been eating","B) Was / eating","C) Did / eat","D) Has / been eating"]},
+{q:"20. There was only ____ left.", a:"B", ex:"Bread саналмайтын зат есім. Жауап кілті бойынша дұрыс жауап Little bread. Дұрыс жауап: B.", sub:"grammar", opts:["A) Few bread","B) Little bread","C) Many bread","D) A little bread"]},
+{q:"21. There were ____ apples on the table.", a:"B", ex:"Apples саналатын көпше зат есім. Нақты сан айтылғанда ten apples деп айтамыз. Дұрыс жауап: B.", sub:"grammar", opts:["A) tenth","B) ten","C) tens","D) the tenth"]},
+{q:"22. I am afraid of ____ mistakes.", a:"A", ex:"Be afraid of + V-ing қолданылады. Сондықтан making дұрыс. Дұрыс жауап: A.", sub:"grammar", opts:["A) making","B) to making","C) made","D) make"]},
+{q:"23. I ____ him today three times.", a:"C", ex:"Today және three times болғандықтан Present Perfect қолданылады: I have seen. Дұрыс жауап: C.", sub:"grammar", opts:["A) had seen","B) has seen","C) have seen","D) seen"]},
+{q:"24. ____ does it take to go from city center to countryside?", a:"B", ex:"Уақыт ұзақтығын сұрау үшін How long does it take...? құрылымы қолданылады. Дұрыс жауап: B.", sub:"grammar", opts:["A) When","B) How long","C) How often","D) What"]},
+{q:"25. This table is made of ____ glass.", a:"D", ex:"Made of glass тіркесінде материал жалпы мағынада айтылған, артикль қолданылмайды. Дұрыс жауап: D.", sub:"grammar", opts:["A) the","B) a","C) an","D) –"]},
+{q:"26. Kate’s job is ____, so Kate is ____.", a:"A", ex:"-ing заттың/жағдайдың сипатын білдіреді: boring job. -ed адамның сезімін білдіреді: Kate is bored. Дұрыс жауап: A.", sub:"grammar", opts:["A) boring / bored","B) boring / boring","C) bored / boring","D) bored / bored"]},
+{q:"27. Rachel ____ that she ____ the visitor before.", a:"D", ex:"Бірінші әрекет past simple: thought. Одан бұрын болған әрекет Past Perfect арқылы беріледі: had seen. Дұрыс жауап: D.", sub:"grammar", opts:["A) thought / saw","B) thinks / sees","C) is thinking / sees","D) thought / had seen"]},
+{q:"28. Choose the sentence with correct position of an adjective.", a:"D", ex:"Seem linking verb болғандықтан adjective одан кейін тұра алады: The price seemed high. Дұрыс жауап: D.", sub:"grammar", opts:["A) The price high surprised him.","B) He reported price high at the meeting.","C) He was shocked with high so the price.","D) The price seemed high."]},
+{q:"29. He advised me ____ until tomorrow.", a:"B", ex:"Advise + object + to infinitive: advised me to wait. Дұрыс жауап: B.", sub:"grammar", opts:["A) Wait","B) To wait","C) Waiting","D) Waited"]},
+{q:"30. I wish I ____ French, then I ____ what the guide is talking about.", a:"A", ex:"I wish + past form қазіргі шындыққа сай келмейтін тілекті білдіреді: could speak. Нәтижесі would understand. Дұрыс жауап: A.", sub:"grammar", opts:["A) could speak, would understand","B) would be able to speak, understood","C) can speak, understand","D) can speak, would understood"]},
+{q:"31. He seemed to me ____ annoyed man ever.", a:"B", ex:"Ever сөзімен superlative қолданылады: the most annoyed man ever. Дұрыс жауап: B.", sub:"grammar", opts:["A) more and more","B) the most","C) more","D) the more"]},
+{q:"32. We talked about ____ to Europe next summer.", a:"B", ex:"Talk about + V-ing қолданылады. Сондықтан going дұрыс. Дұрыс жауап: B.", sub:"grammar", opts:["A) Go","B) Going","C) Went","D) Gone"]},
+{q:"33. He admitted ____ on the test.", a:"D", ex:"Admit + V-ing қолданылады: admitted cheating. Дұрыс жауап: D.", sub:"grammar", opts:["A) is cheating","B) to cheat","C) to cheating","D) cheating"]},
+{q:"34. She permitted the children ____ up late.", a:"D", ex:"Permit + object + to infinitive: permitted the children to stay. Дұрыс жауап: D.", sub:"grammar", opts:["A) stayed","B) are staying","C) stay","D) to stay"]},
 
-    const questionText = q.querySelector(".qtitle") ? q.querySelector(".qtitle").innerText : `${index+1}-сұрақ`;
-    let userAnswer = "Жауап таңдалмаған";
-    let isCorrect = false;
+{type:"text", title:"Reading — Text 1: The Statue of Liberty", text:"The Statue of Liberty is one of New York City's most iconic symbols. This 150-foot monument was gifted to the United States from France to celebrate 100 years of America's independence. Claire made reservations because only 240 people are permitted to climb the staircase every day. After climbing almost 400 stairs, she received spectacular views from the statue's crown. The statue changed color because its copper exterior oxidized over time."},
+{q:"35. Who gifted the Statue of Liberty to the United States?", a:"B", ex:"Мәтінде statue France елінен сыйға берілгені айтылған. Дұрыс жауап: B.", sub:"reading", opts:["A) The British","B) The French","C) The Spanish","D) The Dutch"]},
+{q:"36. This monument was gifted to celebrate ____ years of America's independence.", a:"A", ex:"Мәтінде 100 years деп нақты берілген. Дұрыс жауап: A.", sub:"reading", opts:["A) 100","B) 120","C) 140","D) 150"]},
+{q:"37. What was the Statue of Liberty intended to celebrate?", a:"D", ex:"A century = 100 жыл. Мәтін бойынша Америка тәуелсіздігінің 100 жылдығын атап өту үшін берілген. Дұрыс жауап: D.", sub:"reading", opts:["A) Open immigration","B) The end of Civil War","C) Economic recovery","D) A century of American independence"]},
+{q:"38. How many people are permitted to climb the statue's stairs per day?", a:"C", ex:"Мәтінде only 240 people деп айтылған. Дұрыс жауап: C.", sub:"reading", opts:["A) 100","B) 150","C) 240","D) 400"]},
+{q:"39. This ____-foot monument was gifted to the United States.", a:"C", ex:"Мәтінде 150-foot monument деп берілген. Дұрыс жауап: C.", sub:"reading", opts:["A) 50","B) 100","C) 150","D) 200"]},
+{q:"40. From which part did Claire receive views?", a:"D", ex:"Мәтінде views from the statue's crown деп берілген. Дұрыс жауап: D.", sub:"reading", opts:["A) The mouth","B) The nose","C) The eyes","D) The crown"]},
+{q:"41. After climbing almost ____ stairs, Claire received spectacular views.", a:"C", ex:"Мәтінде almost 400 stairs деп айтылған. Дұрыс жауап: C.", sub:"reading", opts:["A) 200","B) 300","C) 400","D) 500"]},
+{q:"42. Why has the Statue of Liberty changed color?", a:"A", ex:"Мәтінде copper exterior oxidized over time деп айтылған. Дұрыс жауап: A.", sub:"reading", opts:["A) Its copper exterior oxidized.","B) It was painted green.","C) It is poorly maintained.","D) Air quality eroded it."]},
 
-    if(checked){
-      userAnswer = checked.value;
-      if(checked.value === correct){
-        isCorrect = true;
-        totalScore++;
-        totals[block].score++;
-        if(sub && totals[sub]) totals[sub].score++;
-      }
+{type:"text", title:"Reading — Text 2: Miami", text:"Christina visited Miami during winter vacation. She is from Boston, where it is cold in winter, but Miami has a very warm climate. She visited the Miami Seaquarium because Miami is close to the ocean. She also visited Everglades National Park, a protected area spanning 1.5 million acres. Native animals include snakes, alligators, and crocodiles. Christina's favorite part was Little Havana, Miami's Cuban neighborhood."},
+{q:"43. In comparison to Christina's hometown, Miami's winter weather is:", a:"B", ex:"Boston қыста суық, Miami жылы климатпен сипатталған. Дұрыс жауап: B.", sub:"reading", opts:["A) Cooler","B) Warmer","C) More humid","D) The same"]},
+{q:"44. Why was Christina motivated to visit the Miami Seaquarium?", a:"C", ex:"Мәтінде Miami's proximity to the ocean inspired her деп айтылған. Дұрыс жауап: C.", sub:"reading", opts:["A) She wanted to protest.","B) She hoped to photograph.","C) Miami's coastal location inspired her.","D) It was recently constructed."]},
+{q:"45. Which animal would not be found in the Everglades?", a:"C", ex:"Мәтінде snakes, alligators, crocodiles және birds айтылған. Dolphins айтылмаған. Дұрыс жауап: C.", sub:"reading", opts:["A) Crocodiles","B) Birds","C) Dolphins","D) Snakes"]},
+{q:"46. Everglades National Park spans ____ million acres.", a:"B", ex:"Мәтінде 1.5 million acres деп берілген. Дұрыс жауап: B.", sub:"reading", opts:["A) 0.5","B) 1.5","C) 2.5","D) 3.5"]},
+{q:"47. Little Havana's identity is based on what culture?", a:"D", ex:"Little Havana — Miami's Cuban neighborhood. Дұрыс жауап: D.", sub:"reading", opts:["A) American culture","B) Dominican culture","C) Mexican culture","D) Cuban culture"]},
+{q:"48. Native animals include ____, alligators, and crocodiles.", a:"D", ex:"Мәтінде Native animals include snakes, alligators, and crocodiles деп берілген. Дұрыс жауап: D.", sub:"reading", opts:["A) elephants","B) spiders","C) wolves","D) snakes"]},
+{q:"49. Christina enjoyed hiking the trails in the ____.", a:"B", ex:"Мәтінде hiking the trails in the Everglades деп айтылған. Дұрыс жауап: B.", sub:"reading", opts:["A) Gateway Arch","B) Everglades","C) Guadalupe Mountains","D) Acadia"]},
+{q:"50. What was Christina's favorite part about her trip to Miami?", a:"D", ex:"Мәтінде Little Havana was Christina's favorite part деп берілген. Дұрыс жауап: D.", sub:"reading", opts:["A) Sunbathing","B) Visiting Seaquarium","C) Hiking Everglades","D) Touring Little Havana"]}
+];
+
+function renderQuestions(data, containerId, globalStart, block){
+  const box=document.getElementById(containerId);
+  let html="";
+  let realIndex=globalStart;
+
+  data.forEach(item=>{
+    if(item.type==="text"){
+      html+=`
+        <div class="reading-text">
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+        </div>
+      `;
+      return;
     }
 
-    details += `
-      <div class="ans ${isCorrect ? "ok" : "bad"}">
-        <div><b>${index + 1}. ${questionText}</b></div>
-        <div class="${isCorrect ? "oktxt" : "badtxt"}">${isCorrect ? "Дұрыс" : "Қате"}</div>
-        <div class="ex"><b>Сіздің жауабыңыз:</b> ${userAnswer}</div>
+    const name=`q${realIndex}`;
+    html+=`
+      <div class="q" data-block="${block}" data-sub="${item.sub||""}" data-answer="${item.a}" data-explain="${item.ex}">
+        <div class="qtitle">${item.q}</div>
+        ${item.img ? `<img class="q-img" src="${item.img}" alt="сұрақ суреті">` : ""}
+        ${item.opts.map(opt=>{
+          const value=opt.trim().charAt(0);
+          return `<label class="opt"><input type="radio" name="${name}" value="${value}"> ${opt}</label>`;
+        }).join("")}
+      </div>
+    `;
+    realIndex++;
+  });
+
+  box.innerHTML=html;
+}
+
+renderQuestions(critical,"criticalQuestions",1,"critical");
+renderQuestions(analytical,"analyticalQuestions",16,"analytical");
+renderQuestions(english,"englishQuestions",31,"english");
+
+function makeDetails(blockName){
+  const questions=document.querySelectorAll(`.q[data-block="${blockName}"]`);
+  let score=0;
+  let html="";
+
+  questions.forEach((q,index)=>{
+    const correct=q.dataset.answer;
+    const checked=q.querySelector("input[type='radio']:checked");
+    const explain=q.dataset.explain;
+    const qtitle=q.querySelector(".qtitle").innerText;
+    const selected=checked ? checked.value : "Жауап таңдалмаған";
+    const ok=checked && checked.value===correct;
+
+    if(ok) score++;
+
+    html+=`
+      <div class="ans ${ok ? "ok" : "bad"}">
+        <div><b>${qtitle}</b></div>
+        <div class="${ok ? "oktxt" : "badtxt"}">${ok ? "Дұрыс" : "Қате"}</div>
+        <div class="ex"><b>Сіздің жауабыңыз:</b> ${selected}</div>
         <div class="ex"><b>Дұрыс жауап:</b> ${correct}</div>
         <div class="ex"><b>Түсіндірме:</b><br>${explain}</div>
       </div>
     `;
   });
 
-  const percent = Math.round((totalScore / totalCount) * 100);
+  return {score,total:questions.length,html};
+}
 
-  const resultHTML = `
-    <div class="summary">
+function countSub(sub){
+  const questions=document.querySelectorAll(`.q[data-sub="${sub}"]`);
+  let score=0;
+  questions.forEach(q=>{
+    const checked=q.querySelector("input[type='radio']:checked");
+    if(checked && checked.value===q.dataset.answer) score++;
+  });
+  return {score,total:questions.length};
+}
+
+function showResults(){
+  const criticalRes=makeDetails("critical");
+  const analyticalRes=makeDetails("analytical");
+  const englishRes=makeDetails("english");
+
+  const listening=countSub("listening");
+  const grammar=countSub("grammar");
+  const reading=countSub("reading");
+
+  const totalScore=criticalRes.score+analyticalRes.score+englishRes.score;
+  const totalCount=criticalRes.total+analyticalRes.total+englishRes.total;
+  const percent=Math.round((totalScore/totalCount)*100);
+
+  document.getElementById("criticalResult").innerHTML=`
+    <div class="block-result-title">
+      <h3>Сыни ойлау нәтижесі: ${criticalRes.score} / ${criticalRes.total}</h3>
+    </div>
+    ${criticalRes.html}
+  `;
+
+  document.getElementById("analyticalResult").innerHTML=`
+    <div class="block-result-title">
+      <h3>Аналитикалық ойлау нәтижесі: ${analyticalRes.score} / ${analyticalRes.total}</h3>
+    </div>
+    ${analyticalRes.html}
+  `;
+
+  document.getElementById("englishResult").innerHTML=`
+    <div class="block-result-title">
+      <h3>Ағылшын тілі нәтижесі: ${englishRes.score} / ${englishRes.total}</h3>
+      <div class="score-grid">
+        <div class="score-item">Listening: ${listening.score} / ${listening.total}</div>
+        <div class="score-item">Grammar: ${grammar.score} / ${grammar.total}</div>
+        <div class="score-item">Reading: ${reading.score} / ${reading.total}</div>
+      </div>
+    </div>
+    ${englishRes.html}
+  `;
+
+  document.getElementById("result").innerHTML=`
+    <div class="summary-small">
       <h3>Жалпы нәтиже: ${totalScore} / ${totalCount}</h3>
       <p>Пайыздық көрсеткіш: <b>${percent}%</b></p>
-
       <div class="score-grid">
-        <div class="score-item">${totals.critical.name}: ${totals.critical.score} / ${totals.critical.total}</div>
-        <div class="score-item">${totals.analytical.name}: ${totals.analytical.score} / ${totals.analytical.total}</div>
-        <div class="score-item">${totals.english.name}: ${totals.english.score} / ${totals.english.total}</div>
-        <div class="score-item">${totals.listening.name}: ${totals.listening.score} / ${totals.listening.total}</div>
-        <div class="score-item">${totals.grammar.name}: ${totals.grammar.score} / ${totals.grammar.total}</div>
-        <div class="score-item">${totals.reading.name}: ${totals.reading.score} / ${totals.reading.total}</div>
+        <div class="score-item">Сыни ойлау: ${criticalRes.score} / ${criticalRes.total}</div>
+        <div class="score-item">Аналитикалық ойлау: ${analyticalRes.score} / ${analyticalRes.total}</div>
+        <div class="score-item">Ағылшын тілі: ${englishRes.score} / ${englishRes.total}</div>
       </div>
     </div>
 
-   ${details}
+    <div class="promo">
+      <h3>Тағы да осындай тест тапсырғыңыз келе ме?</h3>
+      <p>Төмендегі дайын тесттерді де өтіп көріңіз:</p>
 
-<div class="promo">
-  <h3>Тағы да осындай тест тапсырғыңыз келе ме?</h3>
-  <p>Төмендегі дайын тесттерді де өтіп көріңіз:</p>
+      <div class="promo-links">
+        <a href="https://naznml.github.io/Variant1/" target="_blank">1-сайтқа өту</a>
+        <a href="https://naznml.github.io/VR.2/" target="_blank">2-сайтқа өту</a>
+      </div>
 
-  <div class="promo-links">
-    <a href="https://naznml.github.io/Variant1/" target="_blank">ТГО + Ағылшын тілі 1-вариант</a>
-    <a href="https://naznml.github.io/VR.2/" target="_blank">ТГО + Ағылшын тілі 2-вариант</a>
-  </div>
+      <p style="margin-top:16px;">Қосымша тесттер туралы білу үшін:</p>
 
-  <p style="margin-top:18px;">Қосымша тесттер туралы білу үшін:</p>
-
-  <div class="promo-links">
-    <a href="https://t.me/elnazm_ln" target="_blank">Telegram арқылы жазу</a>
-    <a href="https://wa.me/77007976745" target="_blank">WhatsApp арқылы жазу</a>
-  </div>
-</div>
-  <p>Төмендегі дайын тесттерді де өтіп көріңіз:</p>
-
-  <div class="promo-links">
-    <a href="https://naznml.github.io/Variant1/" target="_blank">ТГО + Ағылшын тілі 1-вариант</a>
-    <a href="https://naznml.github.io/VR.2/" target="_blank">ТГО + Ағылшын тілі 2-вариант</a>
-  </div>
-
-  <p style="margin-top:18px;">Қосымша тесттер туралы білу үшін:</p>
-
-  <div class="promo-links">
-    <a href="https://t.me/elnazm_ln" target="_blank">Telegram арқылы жазу</a>
-    <a href="https://wa.me/77007976745" target="_blank">WhatsApp арқылы жазу</a>
-  </div>
-</div>
+      <div class="promo-links">
+        <a href="https://t.me/elnazm_ln" target="_blank">Telegram</a>
+        <a href="https://wa.me/77007976745" target="_blank">WhatsApp</a>
+      </div>
+    </div>
   `;
 
-  document.getElementById("result").innerHTML = resultHTML;
-  document.getElementById("result").scrollIntoView({behavior:"smooth", block:"start"});
+  document.getElementById("criticalResult").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-document.addEventListener("contextmenu", e => e.preventDefault());
-document.addEventListener("dragstart", e => e.preventDefault());
-
-document.addEventListener("keydown", function(e){
-  const k = e.key.toUpperCase();
+document.addEventListener("contextmenu",e=>e.preventDefault());
+document.addEventListener("dragstart",e=>e.preventDefault());
+document.addEventListener("keydown",function(e){
+  const k=e.key.toUpperCase();
   if(
-    e.key === "F12" ||
+    e.key==="F12" ||
     (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(k)) ||
     (e.ctrlKey && ["U","S","P","A","C"].includes(k))
   ){
