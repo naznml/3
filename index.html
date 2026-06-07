@@ -1,1 +1,443 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Магистратураға дайындық тесті</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f8fafc;
+  color:#172033;
+  line-height:1.6;
+  user-select:none;
+}
+.hero{
+  background:linear-gradient(135deg,#111827,#1e3a8a,#7c2d12,#ca8a04);
+  color:white;
+  text-align:center;
+  padding:54px 18px 42px;
+}
+.hero h1{
+  margin:0;
+  font-size:40px;
+}
+.subtitle{
+  margin:12px auto 0;
+  max-width:920px;
+  font-size:18px;
+  opacity:.95;
+}
+.copybox{
+  max-width:850px;
+  margin:20px auto 0;
+  background:#fef3c7;
+  color:#78350f;
+  border:2px solid #facc15;
+  border-radius:18px;
+  padding:15px 18px;
+  font-weight:800;
+}
+.copybox span{
+  display:block;
+  font-size:13px;
+  margin-top:5px;
+  font-weight:500;
+}
+.links{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+.links a{
+  color:white;
+  text-decoration:none;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.35);
+  padding:9px 14px;
+  border-radius:999px;
+  font-weight:800;
+}
+.links a:hover{
+  background:white;
+  color:#1e3a8a;
+}
+.nav{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding:13px;
+  border-bottom:1px solid #e5e7eb;
+  box-shadow:0 8px 20px rgba(15,23,42,.08);
+}
+.nav a{
+  text-decoration:none;
+  background:#eff6ff;
+  color:#1d4ed8;
+  border:1px solid #bfdbfe;
+  border-radius:999px;
+  padding:9px 14px;
+  font-weight:800;
+}
+.nav a:hover{
+  background:#1d4ed8;
+  color:white;
+}
+.wrap{
+  max-width:1180px;
+  margin:32px auto 70px;
+  padding:0 16px;
+}
+.card{
+  background:white;
+  border:1px solid #dbeafe;
+  border-radius:26px;
+  padding:26px;
+  margin-bottom:32px;
+  box-shadow:0 18px 44px rgba(15,23,42,.11);
+  scroll-margin-top:90px;
+}
+.head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  border-bottom:1px solid #e0f2fe;
+  padding-bottom:16px;
+  margin-bottom:18px;
+}
+h2{
+  margin:0;
+  color:#1d4ed8;
+  font-size:26px;
+}
+.desc{
+  background:#eff6ff;
+  border-left:6px solid #3b82f6;
+  border-radius:14px;
+  padding:12px 14px;
+  margin-top:10px;
+  color:#374151;
+}
+.badge{
+  background:#dbeafe;
+  color:#1d4ed8;
+  border-radius:999px;
+  padding:7px 12px;
+  font-weight:800;
+  font-size:13px;
+}
+.audio-box{
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  padding:14px;
+  margin:14px 0 20px;
+}
+.audio-box b{
+  display:block;
+  margin-bottom:8px;
+}
+audio{
+  width:100%;
+}
+.reading-text{
+  background:#fff7ed;
+  border-left:6px solid #f97316;
+  border-radius:16px;
+  padding:16px;
+  margin:18px 0;
+  color:#374151;
+}
+.reading-text h3{
+  margin:0 0 10px;
+  color:#9a3412;
+}
+.q{
+  border:1px solid #e5e7eb;
+  border-radius:18px;
+  padding:18px;
+  margin:16px 0;
+  background:#fff;
+}
+.q:hover{
+  border-color:#93c5fd;
+  box-shadow:0 10px 24px rgba(59,130,246,.10);
+}
+.qtitle{
+  font-weight:800;
+  margin-bottom:10px;
+  color:#111827;
+}
+.opt{
+  display:block;
+  margin:7px 0;
+  padding:10px 12px;
+  border-radius:12px;
+  background:#fafafa;
+  border:1px solid #f1f5f9;
+  cursor:pointer;
+}
+.opt:hover{
+  background:#eff6ff;
+  border-color:#93c5fd;
+}
+.opt input{
+  margin-right:8px;
+}
+.q-img{
+  display:block;
+  width:100%;
+  max-width:560px;
+  max-height:360px;
+  object-fit:contain;
+  margin:14px auto;
+  border-radius:14px;
+  border:1px solid #e5e7eb;
+  box-shadow:0 10px 24px rgba(15,23,42,.10);
+  background:white;
+}
+.final-card{
+  text-align:center;
+  background:linear-gradient(135deg,#eff6ff,#fff7ed);
+  border:1px solid #bfdbfe;
+  border-radius:26px;
+  padding:26px;
+  margin:32px 0;
+}
+.btn{
+  border:0;
+  border-radius:16px;
+  background:linear-gradient(135deg,#2563eb,#ea580c);
+  color:white;
+  font-size:17px;
+  font-weight:900;
+  padding:14px 24px;
+  cursor:pointer;
+  box-shadow:0 10px 24px rgba(37,99,235,.25);
+}
+.btn:hover{
+  transform:translateY(-1px);
+}
+.result{
+  margin-top:24px;
+  text-align:left;
+}
+.summary{
+  background:#ecfdf5;
+  border:1px solid #86efac;
+  border-left:6px solid #22c55e;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:16px;
+}
+.summary h3{
+  margin:0 0 10px;
+  color:#15803d;
+  font-size:24px;
+}
+.score-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:10px;
+  margin-top:12px;
+}
+.score-item{
+  background:white;
+  border:1px solid #bbf7d0;
+  border-radius:14px;
+  padding:12px;
+  font-weight:800;
+}
+.ans{
+  border-radius:16px;
+  padding:15px;
+  margin:12px 0;
+  border:1px solid #e5e7eb;
+}
+.ok{
+  background:#ecfdf5;
+  border-color:#86efac;
+}
+.bad{
+  background:#fff1f2;
+  border-color:#fecdd3;
+}
+.oktxt{
+  color:#15803d;
+  font-weight:800;
+}
+.badtxt{
+  color:#be123c;
+  font-weight:800;
+}
+.ex{
+  margin-top:8px;
+  font-size:15px;
+}
+.promo{
+  background:#111827;
+  color:white;
+  border-radius:22px;
+  padding:22px;
+  margin-top:22px;
+  text-align:center;
+}
+.promo h3{
+  margin:0 0 10px;
+}
+.promo-links{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+.promo-links a{
+  color:white;
+  text-decoration:none;
+  background:#2563eb;
+  padding:10px 14px;
+  border-radius:999px;
+  font-weight:900;
+}
+.promo-links a:nth-child(2){background:#7c3aed}
+.promo-links a:nth-child(3){background:#16a34a}
+.footer{
+  text-align:center;
+  color:#64748b;
+  margin:34px 0 0;
+  font-size:14px;
+}
+@media(max-width:720px){
+  .hero h1{font-size:30px}
+  .card{padding:19px;border-radius:20px}
+  h2{font-size:22px}
+  .q-img{max-height:300px}
+}
+</style>
+</head>
 
+<body>
+<section class="hero">
+  <h1>Магистратураға дайындық тесті</h1>
+  <div class="subtitle">
+    Сыни ойлау · Аналитикалық ойлау · Ағылшын тілі
+  </div>
+
+  <div class="copybox">
+    <b>© @elnazm_ln</b><br>
+    Сайтты көшіруге, қайта сатуға және таратуға тыйым салынады.
+    <span>Копировать сайт, перепродавать и распространять запрещено.</span>
+  </div>
+
+  <div class="links">
+    <a href="https://t.me/+8SolEPgN4Is0MTMy" target="_blank">Telegram канал</a>
+    <a href="https://t.me/elnazm_ln" target="_blank">Telegram личка</a>
+    <a href="https://wa.me/77007976745" target="_blank">WhatsApp</a>
+  </div>
+</section>
+
+<nav class="nav">
+  <a href="#critical">Сыни ойлау</a>
+  <a href="#analytical">Аналитикалық ойлау</a>
+  <a href="#english">Ағылшын тілі</a>
+  <a href="#finish">Нәтиже</a>
+</nav>
+
+<main class="wrap">
+<form id="quizForm">
+
+<section class="card" id="critical">
+  <div class="head">
+    <div>
+      <h2>Сыни ойлау</h2>
+      <div class="desc">1–15 сұрақ. Есептеу, салыстыру, диаграмма және кесте бойынша тапсырмалар.</div>
+    </div>
+    <span class="badge">15 сұрақ</span>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="D" data-explain="A шамасы 3/4 = 0,75. B шамасы 2/13 ≈ 0,15. 0,75 саны 0,15-тен үлкен, сондықтан A шамасы B шамасынан үлкен. Дұрыс жауап: D.">
+    <div class="qtitle">1. Бағанды салыстырыңыз: A шамасы = 3/4, B шамасы = 2/13</div>
+    <label class="opt"><input type="radio" name="q1" value="A"> A) B &gt; A</label>
+    <label class="opt"><input type="radio" name="q1" value="B"> B) B = 3A</label>
+    <label class="opt"><input type="radio" name="q1" value="C"> C) B = A</label>
+    <label class="opt"><input type="radio" name="q1" value="D"> D) B &lt; A</label>
+    <label class="opt"><input type="radio" name="q1" value="E"> E) B &gt; 3A</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="B" data-explain="150 000 теңгенің 15%-ы: 150000 × 0,15 = 22500. Жеңілдік бағасы: 150000 − 22500 = 127500 теңге. Дұрыс жауап: B.">
+    <div class="qtitle">2. Теледидардың негізгі сатылым бағасы 150 000 теңге. Жеңілдік кезінде 15%-ға арзандатылған теледидардың бағасын табыңыз.</div>
+    <label class="opt"><input type="radio" name="q2" value="A"> A) 125 000 тг</label>
+    <label class="opt"><input type="radio" name="q2" value="B"> B) 127 500 тг</label>
+    <label class="opt"><input type="radio" name="q2" value="C"> C) 110 000 тг</label>
+    <label class="opt"><input type="radio" name="q2" value="D"> D) 115 000 тг</label>
+    <label class="opt"><input type="radio" name="q2" value="E"> E) 113 000 тг</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="C" data-explain="Теңдеуді ашамыз: 6 − 4(z−2)+2 = 4 − 2(z−4). Сол жақ: 6−4z+8+2 = 16−4z. Оң жақ: 4−2z+8 = 12−2z. 16−4z = 12−2z, сонда 4 = 2z, z = 2. Дұрыс жауап: C.">
+    <div class="qtitle">3. 6 − 4(z − 2) + 2 = 4 − 2(z − 4), теңдеудегі z-тің мәні.</div>
+    <label class="opt"><input type="radio" name="q3" value="A"> A) 0</label>
+    <label class="opt"><input type="radio" name="q3" value="B"> B) −3</label>
+    <label class="opt"><input type="radio" name="q3" value="C"> C) 2</label>
+    <label class="opt"><input type="radio" name="q3" value="D"> D) −2</label>
+    <label class="opt"><input type="radio" name="q3" value="E"> E) 3</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="B" data-explain="Теңдеу: (y−3)/6 = 7/3. Айқастырып көбейтеміз: 3(y−3)=42. 3y−9=42, 3y=51, y=17. Дұрыс жауап: B.">
+    <div class="qtitle">4. (y − 3) / 6 = 7 / 3 теңдеуіндегі y мәні.</div>
+    <label class="opt"><input type="radio" name="q4" value="A"> A) 16</label>
+    <label class="opt"><input type="radio" name="q4" value="B"> B) 17</label>
+    <label class="opt"><input type="radio" name="q4" value="C"> C) 18</label>
+    <label class="opt"><input type="radio" name="q4" value="D"> D) 19</label>
+    <label class="opt"><input type="radio" name="q4" value="E"> E) 20</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="B" data-explain="2(3x+1)−x ≤ 3(x+4). Ашамыз: 6x+2−x ≤ 3x+12. 5x+2 ≤ 3x+12. 2x ≤ 10, x ≤ 5. Дұрыс жауап: B.">
+    <div class="qtitle">5. 2(3x + 1) − x ≤ 3(x + 4), теңсіздікті шешіңіз.</div>
+    <label class="opt"><input type="radio" name="q5" value="A"> A) x ≤ 4</label>
+    <label class="opt"><input type="radio" name="q5" value="B"> B) x ≤ 5</label>
+    <label class="opt"><input type="radio" name="q5" value="C"> C) x ≤ −5</label>
+    <label class="opt"><input type="radio" name="q5" value="D"> D) x &gt; 5</label>
+    <label class="opt"><input type="radio" name="q5" value="E"> E) x &gt; −5</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="A" data-explain="Берілген бөлшекті теңдеу шешілгенде x = −1 шығады. Тексеру арқылы да көруге болады: x = −1 қойғанда теңдік орындалады. Дұрыс жауап: A.">
+    <div class="qtitle">6. Берілген бөлшекті теңдеудің шешімі.</div>
+    <label class="opt"><input type="radio" name="q6" value="A"> A) −1</label>
+    <label class="opt"><input type="radio" name="q6" value="B"> B) 2</label>
+    <label class="opt"><input type="radio" name="q6" value="C"> C) 1</label>
+    <label class="opt"><input type="radio" name="q6" value="D"> D) 4</label>
+    <label class="opt"><input type="radio" name="q6" value="E"> E) 3</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="A" data-explain="Диаграмма бойынша Аружан 60 ұпай, Бибарыс 40 ұпай жинаған. 60 − 40 = 20. Демек, Бибарыс Аружаннан 20 ұпай кем жинаған. Дұрыс жауап: A.">
+    <div class="qtitle">7. Диаграмманы пайдаланып, Бибарыс Аружаннан қанша ұпай кем жинағанын анықтаңыз.</div>
+    <img class="q-img" src="IMG_0909.jpeg" alt="7-сұрақ диаграммасы">
+    <label class="opt"><input type="radio" name="q7" value="A"> A) 20</label>
+    <label class="opt"><input type="radio" name="q7" value="B"> B) 30</label>
+    <label class="opt"><input type="radio" name="q7" value="C"> C) 15</label>
+    <label class="opt"><input type="radio" name="q7" value="D"> D) 18</label>
+    <label class="opt"><input type="radio" name="q7" value="E"> E) 10</label>
+  </div>
+
+  <div class="q" data-block="critical" data-answer="B" data-explain="Радиус диаметрдің жартысына тең. Диаметр 30 см болса, радиус 30/2 = 15 см. Дұрыс жауап: B.">
+    <div class="qtitle">8. Диаметрі 30 см болатын шеңбердің радиусын табыңыз.</div>
+    <label class="opt"><input type="radio" name="q8" value="A"> A) 10 см</label>
+    <label class="opt"><input type="radio" name="q8" value="B"> B) 15 см</label>
+    <label class="opt"><input type="radio" name="q8" value="C"> C) 20 см</label>
+    <label class="opt"><input type="radio" name="q8" value="D"> D) 25 см</label>
+    <label class="opt"><input type="radio" name="q8" value="E"> E) 30 см</label>
+  </div>
