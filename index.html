@@ -41,11 +41,46 @@ body{
   padding:15px 18px;
   font-weight:800;
 }
+<style>
+...
 .copybox span{
   display:block;
   font-size:13px;
   margin-top:5px;
   font-weight:500;
+}
+
+.promo-top{
+  max-width:850px;
+  margin:18px auto 0;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.30);
+  border-radius:18px;
+  padding:16px 18px;
+}
+...
+</style>
+}
+.promo-top h3{
+  margin:0 0 6px;
+  font-size:20px;
+}
+.promo-top p{
+  margin:0 0 12px;
+  opacity:.95;
+}
+.channel-btn{
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+  background:#2563eb;
+  padding:10px 16px;
+  border-radius:999px;
+  font-weight:900;
+}
+.channel-btn:hover{
+  background:white;
+  color:#2563eb;
 }
 .links{
   display:flex;
@@ -343,11 +378,11 @@ audio{
     <span> НЕ Продавать! БЕСПЛАТНЫЙ САЙТ .</span>
   </div>
 
-  <div class="links">
-    <a href="https://t.me/+8SolEPgN4Is0MTMy" target="_blank">Telegram канал</a>
-    <a href="https://t.me/elnazm_ln" target="_blank">Telegram личка</a>
-    <a href="https://wa.me/77007976745" target="_blank">WhatsApp</a>
-  </div>
+<div class="promo-top">
+  <h3>Қосымша тесттер Telegram каналда бар</h3>
+  <p>Магистратураға дайындыққа арналған басқа да тесттер мен материалдарды Telegram каналдан көре аласыз.</p>
+  <a class="channel-btn" href="https://t.me/+8SolEPgN4Is0MTMy" target="_blank">Telegram каналға өту</a>
+</div>
 </section>
 
 <nav class="nav">
@@ -1200,14 +1235,22 @@ function showResults(){
       <h3>Тағы да осындай тест тапсырыңыз</h3>
       <p>Басқа дайындық тесттері мен материалдар төменде:</p>
 
-      <div class="promo-links">
-        <a href="https://naznml.github.io/Variant1/" target="_blank">ТГО + Ағылшын тілі 1-вариант</a>
-        <a href="https://naznml.github.io/VR.2/" target="_blank">ТГО + Ағылшын тілі 2-вариант</a>
-        <a href="https://t.me/+8SolEPgN4Is0MTMy" target="_blank">Telegram канал</a>
-        <a href="https://t.me/elnazm_ln" target="_blank">Telegram личка</a>
-        <a href="https://wa.me/77007976745" target="_blank">WhatsApp</a>
-      </div>
-    </div>
+      <div class="promo">
+  <h3>Тағы да осындай тест тапсырғыңыз келе ме?</h3>
+  <p>Төмендегі дайын тесттерді де өтіп көріңіз:</p>
+
+  <div class="promo-links">
+    <a href="https://naznml.github.io/Variant1/" target="_blank">ТГО + Ағылшын тілі 1-вариант</a>
+    <a href="https://naznml.github.io/VR.2/" target="_blank">ТГО + Ағылшын тілі 2-вариант</a>
+  </div>
+
+  <p style="margin-top:18px;">Қосымша тесттер туралы білу үшін:</p>
+
+  <div class="promo-links">
+    <a href="https://t.me/elnazm_ln" target="_blank">Telegram арқылы жазу</a>
+    <a href="https://wa.me/77007976745" target="_blank">WhatsApp арқылы жазу</a>
+  </div>
+</div>
   `;
 
   document.getElementById("result").innerHTML = resultHTML;
